@@ -1,0 +1,25 @@
+.app {
+  margin-top: 65px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+button{
+  padding:10px;
+  margin: 10px;
+  font-weight: 1000;
+  color: green;
+  background-color: chartreuse;
+  text-shadow: 5px;
+  width: 10rem;
+}
+
+.footer { 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: hsla(224, 61%, 78%, 0.281);
+    color: white;
+    text-align: center;
+}
