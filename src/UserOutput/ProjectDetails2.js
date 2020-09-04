@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectDetails2 = () => {
   return (
-    <div style={{ color: "black", padding: "20px", fontSize: "20px", border: "1px solid black", height: "370px" }}>
+    <div style={{ color: "black", padding: "20px", fontSize: "20px", border: "1px solid black", height: "400px" ,marginTop:"7rem"}}>
       <h1 style={{ fontWeight: "200px", textTransform: "uppercase", textAlign: "center" }}>Project details 2</h1>
 
       <ol>

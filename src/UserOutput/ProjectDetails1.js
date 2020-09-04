@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectDetails1 = (props) => {
   return (
-    <div style={{ color: "black", padding: "20px", fontSize: "20px", border: "1px solid black", height: "370px" }}>
+    <div style={{ color: "black", padding: "20px", fontSize: "20px", border: "1px solid black", height: "400px",marginTop:"7rem" }}>
       <h1 style={{ fontWeight: "200px", textTransform: "uppercase", textAlign: "center" }}> Project details 1 </h1>
       <ol>
         <li>Create TWO new components: UserInput and UserOutput</li>
