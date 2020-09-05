@@ -5,9 +5,7 @@ import UserInput from "./UserInput/UserInput";
 import ProjectDetails1 from "./UserOutput/ProjectDetails1";
 import ProjectDetails2 from "./UserOutput/ProjectDetails2";
 import TextLength from "./TextLengthChecker/TextLength";
-//import BootstrapNavbar from "./Bootstrap-Components/Bootstrap_Navbar" 
-
-
+//import BootstrapNavbar from "./Bootstrap-Components/Bootstrap_Navbar"
 
 class App extends React.Component {
   constructor(props) {
@@ -65,26 +63,32 @@ class App extends React.Component {
   //*********************************** State Modifiers End ***********************************
 
   //*********************************** RenderProject Conditionally Start ***********************************
-  FixDisplay = () => (this.state.key === "OFF" ? this.setState({ key: "ON" }) : this.setState({ key: "OFF", out: "OFF" }));
+
+  FixDisplay = () => (this.state.key === "OFF" ? this.setState({ key: this.state.storekey, out: this.state.storeOut }) : this.setState({ key: "OFF", out: "OFF" }));
 
   projectOutput = () => {
-    const stateOut = this.state.out;
-    this.setState({ storeOut: stateOut });
     if (this.state.out === "pro1") {
       this.setState({
         projectRenderOutput: "Project1",
         out: "out",
+        storeOut: "pro1",
       });
     } else if (this.state.out === "pro2") {
       this.setState({
         projectRenderOutput: "Project2",
         out: "out",
+        storeOut: "pro2",
       });
     } else if (this.state.out === "out") {
       this.setState({
         projectRenderOutput: null,
-        out: this.state.storeOut,
       });
+
+      if (this.state.key !== "ON") {
+        this.setState({
+          out: this.state.storeOut,
+        });
+      }
     }
     // console.log(`key : ${this.state.key} , out : ${this.state.out} `);
   };
@@ -103,6 +107,8 @@ class App extends React.Component {
         projectRenderOutput: null,
         out: "pro1",
         key: "2",
+        storekey: "2",
+        storeOut: "pro1",
       });
     } else if (this.state.key === "2") {
       this.setState({
@@ -116,6 +122,8 @@ class App extends React.Component {
         projectRenderOutput: null,
         out: "pro2",
         key: "3",
+        storekey: "3",
+        storeOut: "pro2",
       });
     } else if (this.state.key === "3") {
       this.setState({
@@ -124,6 +132,7 @@ class App extends React.Component {
         },
         out: "out",
         key: "ON",
+        projectRenderOutput: null,
       });
     }
     // console.log(`key : ${this.state.key} , out : ${this.state.out} `);
@@ -132,7 +141,7 @@ class App extends React.Component {
   //*********************************** RenderProject Conditionally End ***********************************
 
   countLength = (event) => {
-    this.setState({ textLength: event.target.value.length });
+    this.setState({ textLength: event.target.value.length, text: event.target.value });
 
     this.state.textLength < 11 ? this.setState({ textStatus: "MAN LIMIT SHORT", textBool: true }) : this.setState({ textStatus: "MAN LIMIT BIG", textBool: false });
   };
@@ -142,7 +151,7 @@ class App extends React.Component {
       <div className={classes.app}>
         {/************************************************ Dev Test Place ************************************************/}
 
-        {/* <TextLength change={(event) => this.countLength(event)} textLength={this.state.textLength} textStatus={this.state.textStatus} textBool={this.state.textBool} /> */}
+        {/* <TextLength change={(event) => this.countLength(event)} textLength={this.state.textLength} textStatus={this.state.textStatus} textBool={this.state.textBool} text={this.state.text} /> */}
 
         {/************************************************ Dev Test Place ************************************************/}
 
@@ -152,7 +161,7 @@ class App extends React.Component {
 
         {this.state.projectRenderOutput === "Project2" ? (
           <div>
-            <TextLength change={(event) => this.countLength(event)} textLength={this.state.textLength} textStatus={this.state.textStatus} textBool={this.state.textBool} />
+        <TextLength change={(event) => this.countLength(event)} textLength={this.state.textLength} textStatus={this.state.textStatus} textBool={this.state.textBool} text={this.state.text} />
           </div>
         ) : null}
 
@@ -185,7 +194,6 @@ class App extends React.Component {
             </div>
           ) : null}
           {/************************ Dynamically Rendered Project1 buttons Output End ************************/}
-
 
           <button type="submit" onClick={this.FixDisplay}>
             {this.state.key === "OFF" ? "Fix Project" : "Change Project"}
