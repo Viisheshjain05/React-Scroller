@@ -1,10 +1,10 @@
 import React from "react";
 import classes from "./App.module.css";
 import UserOutput from "./UserOutput/UserOutput";
-import UserInput from "./UserInput/UserInput";
+import UserInput from "./components/UserInput/UserInput";
 import ProjectDetails1 from "./UserOutput/ProjectDetails1";
 import ProjectDetails2 from "./UserOutput/ProjectDetails2";
-import TextLength from "./TextLengthChecker/TextLength";
+import TextLength from "./components/TextLengthChecker/TextLength";
 //import BootstrapNavbar from "./Bootstrap-Components/Bootstrap_Navbar"
 
 class App extends React.Component {
