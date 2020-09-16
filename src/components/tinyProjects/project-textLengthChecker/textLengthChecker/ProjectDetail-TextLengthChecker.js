@@ -1,12 +1,12 @@
 import React from "react";
-import style from "./ProjectDetail.module.css";
+import style from "./ProjectDetail-TextLengthChecker.module.css";
 
 const ProjectDetails = () => {
   return (
     <div className={style.HeadStyle}>
       <div className={style.BodyStyle}>
       <h1  >
-         Project details 2
+         Text Length Checker (basic)
       </h1>
       </div>
       <ol>

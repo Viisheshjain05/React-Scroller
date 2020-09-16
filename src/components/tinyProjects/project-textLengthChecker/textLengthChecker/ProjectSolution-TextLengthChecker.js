@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-import style from "./ProjectDetail.module.css";
+import style from "./ProjectDetail-TextLengthChecker.module.css";
 
 const TextLength = (props) => {
   let textChecker = null;

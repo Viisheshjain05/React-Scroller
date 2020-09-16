@@ -1,11 +1,11 @@
 import React from 'react';
-import MiniProjects from "../tinyProjects/TinyProjects" 
+import TinyProjects from "../tinyProjects/TinyProjects" 
 
 
 const Layout = (props) => {
     return (
         <div>
-            <MiniProjects/>
+            <TinyProjects/>
         </div>
     );
 }

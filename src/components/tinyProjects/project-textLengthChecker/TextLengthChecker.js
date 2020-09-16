@@ -1,28 +1,11 @@
-import React, { useState , useEffect} from "react";
+import React, { useState } from "react";
 import ProjectDetails from "./textLengthChecker/ProjectDetail-TextLengthChecker";
 import ProjectSolution from "./textLengthChecker/ProjectSolution-TextLengthChecker";
 import Char from "./textLengthChecker/CharSol";
-
-
+import DisplaySolution from "../DisplaySolution";
 
 const TextLengthChecker = (props) => {
-console.log(props)
-  const [DisplaySol, SetDisplaySol] = useState(false);
-  
-  useEffect(() => {    
-    if (props.DisplaySolution === true) {
-      SetDisplaySol(true);
-      console.log("true");
-    }
-    if (props.DisplaySolution === false) {
-      SetDisplaySol(false);
-      console.log("false");
-    }
-
-  }, [props.DisplaySolution]);
-  
-
-const [TextValue, setTextValue] = useState({ text: [] });
+  const [TextValue, setTextValue] = useState({ text: [] });
 
   const countLength = (event) => {
     const text = event.target.value.split(" ");
@@ -39,13 +22,13 @@ const [TextValue, setTextValue] = useState({ text: [] });
     <div>
       <ProjectDetails />
 
-      {DisplaySol === true
-        ? TextValue.text.map((el, ind) => {
-            return <Char key={ind} text={el} clicked={() => removeText(ind)} />;
-          })
-        : null}
+      <DisplaySolution DisplaySolution={props.DisplaySolution}>
+        {TextValue.text.map((el, ind) => {
+          return <Char key={ind} text={el} clicked={() => removeText(ind)} />;
+        })}
 
-      {DisplaySol === true ? <ProjectSolution change={(event) => countLength(event)} text={TextValue.text} /> : null}
+        <ProjectSolution change={(event) => countLength(event)} text={TextValue.text} />
+      </DisplaySolution>
     </div>
   );
 };

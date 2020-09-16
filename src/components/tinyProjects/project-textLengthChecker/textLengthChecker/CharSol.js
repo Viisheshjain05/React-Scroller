@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./ProjectDetail.module.css"
+import Styles from "./ProjectDetail-TextLengthChecker.module.css"
 
 function CharSol(props) {
   const keyVal = props.text.split("");

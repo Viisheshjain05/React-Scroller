@@ -1,0 +1,42 @@
+.HeadStyle {
+    color: black; 
+    padding: 20px;
+    width: 98%;
+    height: 400px ;
+    font-size: 20px; 
+    border: 1px solid black; 
+    margin-top:50px
+}
+
+.BodyStyle { 
+    text-transform: uppercase;
+    font-weight : 700;
+    text-align : center; 
+}  
+
+
+.FormControl{
+    margin-left: 0.7rem;
+    text-align: center;
+    width:98% ;
+    margin-top: 1rem;
+    margin-bottom: 20px ;
+    background-color:rgb(192, 192, 209);
+}
+
+.CharStyle{
+    float: left;
+    display:  flex;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black
+}
+
+.TextChecker{
+    color: red; 
+    display: inline-block; 
+    padding: 16px; 
+    text-align: center; 
+    margin: 16px; 
+    border: 1px solid black
+}
