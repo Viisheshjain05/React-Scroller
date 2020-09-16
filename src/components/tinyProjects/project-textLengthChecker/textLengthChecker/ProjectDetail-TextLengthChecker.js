@@ -1,10 +1,14 @@
 import React from "react";
+import style from "./ProjectDetail.module.css";
 
-const ProjectDetails2 = () => {
+const ProjectDetails = () => {
   return (
-    <div style={{ color: "black", padding: "20px", fontSize: "20px", border: "1px solid black", height: "400px" ,marginTop:"7rem"}}>
-      <h1 style={{ fontWeight: "200px", textTransform: "uppercase", textAlign: "center" }}>Project details 2</h1>
-
+    <div className={style.HeadStyle}>
+      <div className={style.BodyStyle}>
+      <h1  >
+         Project details 2
+      </h1>
+      </div>
       <ol>
         <li>Create an input field (in App component) with a change listener which outputs the length of the entered text below it (e.g. in a paragraph).</li>
 
@@ -23,4 +27,4 @@ const ProjectDetails2 = () => {
   );
 };
 
-export default ProjectDetails2;
+export default ProjectDetails;
