@@ -32,7 +32,7 @@ const UserInputOutput = (props) => {
     <div>
       <ProjectDetail />
 
-      <DisplaySolution DisplaySolution={props.DisplaySolution}>
+      <DisplaySolution toggle={props.DisplaySolution}>
         <div>
           <UserOutput name={PersonName.personName} age={PersonId.personId}>
             Hiilet see

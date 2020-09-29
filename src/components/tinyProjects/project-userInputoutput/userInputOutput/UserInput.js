@@ -1,7 +1,7 @@
 import React from "react";
 
 const UserInput = (props) => {
-  console.log(props)
+  // console.log(props)
   return (
     <div>
       <p>Update your login details</p>

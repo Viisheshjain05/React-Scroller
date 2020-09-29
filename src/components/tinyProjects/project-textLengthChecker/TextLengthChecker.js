@@ -22,7 +22,7 @@ const TextLengthChecker = (props) => {
     <div>
       <ProjectDetails />
 
-      <DisplaySolution DisplaySolution={props.DisplaySolution}>
+      <DisplaySolution toggle={props.DisplaySolution}>
         {TextValue.text.map((el, ind) => {
           return <Char key={ind} text={el} clicked={() => removeText(ind)} />;
         })}
