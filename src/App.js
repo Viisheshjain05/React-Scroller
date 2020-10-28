@@ -3,11 +3,14 @@ import Layout from "./components/layout/Layout";
 import "./App.css";
 
 class App extends Component {
+  
+
   render() {
     return (
-// Mini Project Layout
-    <div><Layout /></div>
-    
+      // Mini Project Layout
+      <div>
+        <Layout />
+      </div>
     );
   }
 }
