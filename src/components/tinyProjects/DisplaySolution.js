@@ -2,13 +2,17 @@
 
 // Just wrap element want to toggle between <displaySolution> and set inside TinyProject
 
-import React from "react";
+import React  from "react";
 
 const DisplaySolution = (props) => {
   return <div>{props.toggle === true ? <div>{props.children}</div> : null}</div>;
 };
 
 export default DisplaySolution;
+
+
+// Just to Create option Select Feature
+
 
 // import TextlengthChecker from "../tinyProjects/project-textLengthChecker/TextLengthChecker";
 // import Layout from "../layout/Layout"
