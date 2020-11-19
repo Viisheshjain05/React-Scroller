@@ -1,20 +1,14 @@
 import React from "react";
-import ToggleProjects from "../tinyProjects/ToggleProjects";
-// import LifeCycleHooks from "../tinyProjects/GettingReactConsepts/ClassLifeCycleHook/LifeCycleMtd";
-// import ForwardingRef from "../tinyProjects/GettingReactConsepts/ForwardingRef/ForwardingRef";
-// import Search from "../tinyProjects/Search/index"
-// import SearchCountries from "../tinyProjects/Search/CreatingMySearch"
-
+import ToggleProjects from "../ToggleProjects";
+// import TechUse from "../tinyProjects/TechSelector/whatTechDoUse"
+// import QuizApp from "../tinyProjects/quiz_App/quiz_app"
 const Layout = () => {
 
   return (
     <div>
-      {/* <Search/> */}
+      {/* <TechUse/> */}
+      {/* <QuizApp /> */}
       <ToggleProjects />
-      {/* < SearchCountries/> */}
-      {/* Example How context Api Works  */}
-      {/* <LifeCycleHooks /> */}
-      {/* <ForwardingRef /> */}
     </div>
   );
 };

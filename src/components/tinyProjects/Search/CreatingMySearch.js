@@ -12,6 +12,7 @@ const SearchCountries = () => {
     return (
       <>
         <div style={{ margin: "20px", border: " 2px solid black ", textAlign: "center" }}>
+          {/*  eslint-disable-next-line*/}  {/* //because alt not used inside img tag */}
           <img className={"flag flag-" + country.code.toLowerCase()} />
           <p>{country.code}</p>
           <p>{country.name}</p>

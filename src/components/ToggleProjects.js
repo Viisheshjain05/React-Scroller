@@ -1,8 +1,10 @@
 import React, { Component, lazy, Suspense } from "react";
-import TextLengthChecker from "./project-textLengthChecker/TextLengthChecker";
-import SearchCountries from "./Search/CreatingMySearch";
+import TextLengthChecker from "./tinyProjects/project-textLengthChecker/TextLengthChecker";
+import SearchCountries from "./tinyProjects/Search/CreatingMySearch";
+import WeatherApp from "./tinyProjects/Weather_App/weatherApp";
+import QuizApp from "./tinyProjects/QuizApp/QuizApp";
 // import UserInputOutput from "./project-userInputoutput/UserInputOutput";
-const UserInputOutput = lazy(() => import("./project-userInputoutput/UserInputOutput"));
+const UserInputOutput = lazy(() => import("./tinyProjects/project-userInputoutput/UserInputOutput"));
 
 class ToggleProject extends Component {
   state = {
@@ -23,12 +25,12 @@ class ToggleProject extends Component {
       ? this.setState({ displayProjectID: "03", displayName: "project 3" })
       : this.state.displayProjectID === "03"
       ? this.setState({ displayProjectID: "04", displayName: "project 4" }) // total no. of project is   currently 4 hence stoping it at 1
-      : // : this.state.displayProjectID === "04"
-        // ? this.setState({ displayProjectID: "05" })
-        // : this.state.displayProjectID === "05"
-        // ? this.setState({ displayProjectID: "06" })
-        // : this.state.displayProjectID === "06"
-        // ? this.setState({ displayProjectID: "07" })
+      : this.state.displayProjectID === "04"
+      ? this.setState({ displayProjectID: "05", displayName: "project 5" })
+      : this.state.displayProjectID === "05"
+      ? this.setState({ displayProjectID: "06", displayName: "project 6" })
+      : //  this.state.displayProjectID === "06"
+        // ? this.setState({ displayProjectID: "07", project 7 })
         // : this.state.displayProjectID === "01";
         this.setState({ displayProjectID: "01", displayName: "project 1" });
   };
@@ -109,10 +111,11 @@ class ToggleProject extends Component {
           </Suspense>
         ) : this.state.displayProjectID === "03" ? (
           <SearchCountries />
-        ) : // <Suspense fallback={<div>"Loading..."</div>}>
-        //   <UserInputOutput DisplaySolution={this.state.displaySolution} />
-        // </Suspense>
-        // ) : this.state.displayProjectID === "03" ? (
+        ) : this.state.displayProjectID === "04" ? (
+          <WeatherApp />
+        ) : this.state.displayProjectID === "05" ? (
+          <QuizApp />
+        ) : // ) : this.state.displayProjectID === "03" ? (
         // ADD YOUR PROJECT HERE
 
         // <Suspense fallback={<div>"Loading..."</div>}>

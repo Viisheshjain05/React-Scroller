@@ -1,0 +1,6 @@
+{
+    "WebsiteName": "Open Weather Map",
+    "WebsiteUrl": "https://home.openweathermap.org",
+    "ApiKey": "ba19352cf2e348f94afed75938e6a281",
+    "ApiUrl": "api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}"
+}

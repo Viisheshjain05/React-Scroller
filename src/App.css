@@ -13,6 +13,13 @@ button{
   text-shadow: 5px;
   width: 10rem;
 }
+button:active{
+  background-color: rgb(224, 183, 1);
+}
+
+button:hover{
+  background-color: rgb(117, 219, 14);
+}
 
 .footer { 
     position: fixed;
