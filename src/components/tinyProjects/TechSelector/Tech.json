@@ -1,0 +1,155 @@
+[
+    {
+        "name": "KSS",
+        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "tags": {
+            "primaryTag": [
+                "front-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "Links": {
+            "WebsiteUrl": "LOGO TODO",
+            "Instagram": "Front-end Development",
+            "Facebook": "Css",
+            "linkden": "Css",
+            "github": "StyleGuide, Development",
+            "Figma": "StyleGuide, Development"
+        },
+        "ID": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "StyleIo",
+        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "tags": {
+            "primaryTag": [
+                "front-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "Links": {
+            "WebsiteUrl": "LOGO TODO",
+            "Instagram": "Front-end Development",
+            "Facebook": "Css",
+            "linkden": "Css",
+            "github": "StyleGuide, Development",
+            "Figma": "StyleGuide, Development"
+        },
+        "ID": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "StyleIo",
+        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "tags": {
+            "primaryTag": [
+                "front-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "development"
+            ]
+        },
+        "Links": {
+            "WebsiteUrl": "LOGO TODO",
+            "Instagram": "Front-end Development",
+            "Facebook": "Css",
+            "linkden": "Css",
+            "github": "StyleGuide, Development",
+            "Figma": "StyleGuide, Development"
+        },
+        "ID": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "StyleIo",
+        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "tags": {
+            "primaryTag": [
+                "back-end development"
+            ],
+            "secondaryTag": [
+                "html"
+            ],
+            "tersiaryTag": [
+                "styleguide"
+            ]
+        },
+        "Links": {
+            "WebsiteUrl": "LOGO TODO",
+            "Instagram": "Front-end Development",
+            "Facebook": "Css",
+            "linkden": "Css",
+            "github": "StyleGuide, Development",
+            "Figma": "StyleGuide, Development"
+        },
+        "ID": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "StyleIo",
+        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "tags": {
+            "primaryTag": [
+                "front-end development"
+            ],
+            "secondaryTag": [
+                "html"
+            ],
+            "tersiaryTag": [
+                "development"
+            ]
+        },
+        "Links": {
+            "WebsiteUrl": "LOGO TODO",
+            "Instagram": "Front-end Development",
+            "Facebook": "Css",
+            "linkden": "Css",
+            "github": "StyleGuide, Development",
+            "Figma": "StyleGuide, Development"
+        },
+        "ID": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "StyleIo",
+        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "tags": {
+            "primaryTag": [
+                "back-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "Links": {
+            "WebsiteUrl": "LOGO TODO",
+            "Instagram": "Front-end Development",
+            "Facebook": "Css",
+            "linkden": "Css",
+            "github": "StyleGuide, Development",
+            "Figma": "StyleGuide, Development"
+        },
+        "ID": "LOGO TODO",
+        "licence": "LOGO TODO"
+    }
+]

@@ -1,0 +1,76 @@
+:root{
+    --techMediaColor1 : #f9f9f9;
+    --techMediaColor2 : #c1bccf;
+    --techMediaColor3 : #e79a60;
+    --techMediaColor4 : #f47f8b;
+    --techMediaColor5 : #987fa1;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border: 2px solid black;
+    margin: 1em 0;
+}
+
+
+.techMedia {  
+    display: flex;
+    background-color: var(--techMediaColor1);
+    padding: 1em;
+    border: 1px solid black;
+    margin: 2em 0.25em;
+    min-height: 10em;
+    
+}
+
+.techMedia-image {
+    min-width: 20vw;
+    border: 1px solid black;    
+    flex-grow: 1;
+}
+
+.techMedia-body  {
+    flex-grow: 4;
+    overflow: auto;
+}
+
+.techMedia-body h3 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.techMedia-body p {
+    text-align: center;   
+}
+
+.techMedia-body ul {
+    display: flex;
+    margin: 0;
+    padding-top: 1em;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.techMedia-body ul a{
+    color: black;
+    text-decoration: none;
+    padding-left: 0.25em;   
+}
+
+
+a[href^="https"]::before {
+   content: "🔗 ";
+}
+  
+a[href^="#"]::before {
+   content: "🔗 ";
+}
+  
+a[href^="mailto"]::before {
+   content: "📧 ";
+}
+  
+a[href^="tel"]::before {
+   content: "📞 ";
+}

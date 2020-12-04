@@ -1,0 +1,43 @@
+.InputFormTemplate {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    max-width: 75vw;
+    min-width: 25vw;
+}
+
+.ViewInputForm {
+    margin: 2em;
+}
+
+.InputFormTemplate-body {
+    margin-left: 13em;
+    align-self: center;
+    border-top: 1px solid black;
+    padding: 1em;
+}
+
+.InputFormTemplate-body label {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.InputFormTemplate-body label::after {
+    content: ' ';
+}
+
+.InputFormTemplate-body select {
+    color: rgb(10, 9, 9);
+    font-size: large;
+    border-radius: 0.3em;
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+.InputFormTemplate-body input {
+    color: rgb(10, 9, 9);
+    font-size: large;
+    border-radius: 0.3em;
+    padding: 0.5em;
+}
