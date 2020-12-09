@@ -81,7 +81,7 @@ class ToggleProject extends Component {
           {this.state.displayName}
         </button>
         {/* CREATING A SORTING FUNCTIONALITY */}
-        <form onSubmit={(e) => this.handleSubmit(e)}>
+        <form  onSubmit={(e) => this.handleSubmit(e)}>
           <label>
             Pick your favorite flavor:
             <select value={this.state.value} onChange={(e) => this.handleChange(e)}>

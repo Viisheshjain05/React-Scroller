@@ -1,5 +1,6 @@
 import React from "react";
-import LayoutBulider from "../tinyProjects/TechSelector/LayoutBulider";
+import TechSelector from "../tinyProjects/TechSelector/TechSelector"
+// import LayoutBulider from "../tinyProjects/TechSelector/LayoutBulider";
 // import WhatTechDoUse from "../tinyProjects/TechSelector/nextProjectDetails";
 // import TechUITemplate from "../tinyProjects/TechSelector/component/TechUITemplate";
 // import SearchTechItem from "../tinyProjects/TechSelector/SearchTechItemDUPLICATE";
@@ -14,7 +15,8 @@ const Layout = () => {
       {/* <QuizApp /> */}
       {/* <TechUITemplate/> */}
       {/* <SearchTechItem /> */}
-      < LayoutBulider/>
+      {/* < LayoutBulider/> */}
+      < TechSelector/>
       
       {/* <ToggleProjects /> */}
     </div>

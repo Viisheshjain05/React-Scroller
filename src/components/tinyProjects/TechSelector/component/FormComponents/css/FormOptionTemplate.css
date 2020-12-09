@@ -11,23 +11,23 @@
     margin: 2em;
 }
 
-.InputFormTemplate-body {
+.InputFormTemplate__select--body {
     margin-left: 13em;
     align-self: center;
     border-top: 1px solid black;
     padding: 1em;
 }
 
-.InputFormTemplate-body label {
+.InputFormTemplate__select--body label {
     font-weight: bold;
     font-size: larger;
 }
 
-.InputFormTemplate-body label::after {
+.InputFormTemplate__select--body label::after {
     content: ' ';
 }
 
-.InputFormTemplate-body select {
+.InputFormTemplate__select--body select {
     color: rgb(10, 9, 9);
     font-size: large;
     border-radius: 0.3em;
@@ -35,7 +35,7 @@
     margin-right: 0.5em;
 }
 
-.InputFormTemplate-body input {
+.InputFormTemplate__select--body input {
     color: rgb(10, 9, 9);
     font-size: large;
     border-radius: 0.3em;

@@ -1,7 +1,34 @@
 [
     {
         "name": "KSS",
-        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "imageUrl": "http://placehold.it/400x200&text=",
+        "tags": {
+            "primaryTag": [
+                "front-end development",
+                "back-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
+        },
+        "id": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "StyleIo",
+        "imageUrl": "http://placehold.it/400x200&text=",
         "tags": {
             "primaryTag": [
                 "front-end development"
@@ -14,49 +41,24 @@
                 "development"
             ]
         },
-        "Links": {
-            "WebsiteUrl": "LOGO TODO",
-            "Instagram": "Front-end Development",
-            "Facebook": "Css",
-            "linkden": "Css",
-            "github": "StyleGuide, Development",
-            "Figma": "StyleGuide, Development"
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
         },
-        "ID": "LOGO TODO",
+        "id": "LOGO TODO",
         "licence": "LOGO TODO"
     },
     {
-        "name": "StyleIo",
-        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "name": "CSS Wand",
+        "imageUrl": "http://placehold.it/400x200&text=",
         "tags": {
             "primaryTag": [
-                "front-end development"
-            ],
-            "secondaryTag": [
-                "css"
-            ],
-            "tersiaryTag": [
-                "styleguide",
-                "development"
-            ]
-        },
-        "Links": {
-            "WebsiteUrl": "LOGO TODO",
-            "Instagram": "Front-end Development",
-            "Facebook": "Css",
-            "linkden": "Css",
-            "github": "StyleGuide, Development",
-            "Figma": "StyleGuide, Development"
-        },
-        "ID": "LOGO TODO",
-        "licence": "LOGO TODO"
-    },
-    {
-        "name": "StyleIo",
-        "imagUrl": "http://placehold.it/400x200&text=slide1",
-        "tags": {
-            "primaryTag": [
-                "front-end development"
+                "front-end development",
+                "back-end development"
             ],
             "secondaryTag": [
                 "css"
@@ -65,20 +67,20 @@
                 "development"
             ]
         },
-        "Links": {
-            "WebsiteUrl": "LOGO TODO",
-            "Instagram": "Front-end Development",
-            "Facebook": "Css",
-            "linkden": "Css",
-            "github": "StyleGuide, Development",
-            "Figma": "StyleGuide, Development"
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
         },
-        "ID": "LOGO TODO",
+        "id": "LOGO TODO",
         "licence": "LOGO TODO"
     },
     {
-        "name": "StyleIo",
-        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "name": "Atomize",
+        "imageUrl": "http://placehold.it/400x200&text=",
         "tags": {
             "primaryTag": [
                 "back-end development"
@@ -90,20 +92,20 @@
                 "styleguide"
             ]
         },
-        "Links": {
-            "WebsiteUrl": "LOGO TODO",
-            "Instagram": "Front-end Development",
-            "Facebook": "Css",
-            "linkden": "Css",
-            "github": "StyleGuide, Development",
-            "Figma": "StyleGuide, Development"
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
         },
-        "ID": "LOGO TODO",
+        "id": "LOGO TODO",
         "licence": "LOGO TODO"
     },
     {
         "name": "StyleIo",
-        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "imageUrl": "http://placehold.it/400x200&text=",
         "tags": {
             "primaryTag": [
                 "front-end development"
@@ -115,20 +117,20 @@
                 "development"
             ]
         },
-        "Links": {
-            "WebsiteUrl": "LOGO TODO",
-            "Instagram": "Front-end Development",
-            "Facebook": "Css",
-            "linkden": "Css",
-            "github": "StyleGuide, Development",
-            "Figma": "StyleGuide, Development"
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
         },
-        "ID": "LOGO TODO",
+        "id": "LOGO TODO",
         "licence": "LOGO TODO"
     },
     {
-        "name": "StyleIo",
-        "imagUrl": "http://placehold.it/400x200&text=slide1",
+        "name": "Sassyfication",
+        "imageUrl": "http://placehold.it/400x200&text=",
         "tags": {
             "primaryTag": [
                 "back-end development"
@@ -141,15 +143,69 @@
                 "development"
             ]
         },
-        "Links": {
-            "WebsiteUrl": "LOGO TODO",
-            "Instagram": "Front-end Development",
-            "Facebook": "Css",
-            "linkden": "Css",
-            "github": "StyleGuide, Development",
-            "Figma": "StyleGuide, Development"
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
         },
-        "ID": "LOGO TODO",
+        "id": "LOGO TODO",
         "licence": "LOGO TODO"
+    },
+    {
+        "name": "KSS",
+        "imageUrl": "http://placehold.it/400x200&text=",
+        "tags": {
+            "primaryTag": [
+                "front-end development",
+                "back-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
+        },
+        "id": "LOGO TODO",
+        "licence": "LOGO TODO"
+    },
+    {
+        "name": "SampleName",
+        "id": "uniqIdLib",
+        "imageUrl": "http://placehold.it/400x200&text=",
+        "tags": {
+            "primaryTag": [
+                "front-end development",
+                "back-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "links": {
+            "websiteUrl": "www.sampleWebsite.com",
+            "github": "https://github.com/sampleUserName",
+            "facebook": "Sample05@gmail.com||EmailAddress",
+            "instagram": "Sample05@gmail.com||EmailAddress",
+            "linkden": "https://www.linkedin.com/in/sample-759302583",
+            "figma": "figma.com/@SampleName"
+        },
+        "licence": "Open Source Project"
     }
 ]
