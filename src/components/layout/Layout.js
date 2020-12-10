@@ -10,7 +10,7 @@ import TechSelector from "../tinyProjects/TechSelector/TechSelector"
 const Layout = () => {
 
   return (
-    <div>
+    <>
       {/* <TechUse/> */}
       {/* <QuizApp /> */}
       {/* <TechUITemplate/> */}
@@ -19,7 +19,7 @@ const Layout = () => {
       < TechSelector/>
       
       {/* <ToggleProjects /> */}
-    </div>
+    </>
   );
 };
 

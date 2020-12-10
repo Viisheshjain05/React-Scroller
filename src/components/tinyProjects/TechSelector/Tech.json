@@ -1,32 +1,5 @@
 [
     {
-        "name": "KSS",
-        "imageUrl": "http://placehold.it/400x200&text=",
-        "tags": {
-            "primaryTag": [
-                "front-end development",
-                "back-end development"
-            ],
-            "secondaryTag": [
-                "css"
-            ],
-            "tersiaryTag": [
-                "styleguide",
-                "development"
-            ]
-        },
-        "links": {
-            "websiteUrl": "www.sampleWebsite.com",
-            "github": "https://github.com/sampleUserName",
-            "facebook": "Sample05@gmail.com||EmailAddress",
-            "instagram": "Sample05@gmail.com||EmailAddress",
-            "linkden": "https://www.linkedin.com/in/sample-759302583",
-            "figma": "figma.com/@SampleName"
-        },
-        "id": "LOGO TODO",
-        "licence": "LOGO TODO"
-    },
-    {
         "name": "StyleIo",
         "imageUrl": "http://placehold.it/400x200&text=",
         "tags": {
@@ -207,5 +180,32 @@
             "figma": "figma.com/@SampleName"
         },
         "licence": "Open Source Project"
+    },
+    {
+        "name": "KSS",
+        "id": "uniqIdLib",
+        "imageUrl": "http://placehold.it/400x200&text=",
+        "tags": {
+            "primaryTag": [
+                "front-end development",
+                "back-end development"
+            ],
+            "secondaryTag": [
+                "css"
+            ],
+            "tersiaryTag": [
+                "styleguide",
+                "development"
+            ]
+        },
+        "links": {
+            "websiteUrl": "https://warpspire.com/kss/",
+            "github": "https://github.com/kneath/kss.git",
+            "facebook": "N.A",
+            "instagram": "N.A",
+            "linkden": "N.A",
+            "figma": "N.A"
+        },
+        "licence": "MIT License"
     }
 ]

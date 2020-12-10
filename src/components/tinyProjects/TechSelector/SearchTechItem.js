@@ -4,7 +4,7 @@ import TechMediaTemplate from "./component/TechMediaTemplate";
 import Tech from "./Tech.json";
 import "./component/FormComponents/css/FormOptionTemplate.css";
 
-const SearchTechItemDUPLICATE = () => {
+const SearchTechItem = () => {
   const [PrimaryOption, setPrimaryOption] = useState([""]);
   const [SecondaryOption, setSecondaryOption] = useState([""]);
   const [TersiaryOption, setTersiaryOption] = useState([""]);
@@ -89,7 +89,7 @@ const SearchTechItemDUPLICATE = () => {
   return <div>{renderFormOption()}</div>;
 };
 
-export default SearchTechItemDUPLICATE;
+export default SearchTechItem;
 
 // const Tech = {
 //     "name": "KSS",

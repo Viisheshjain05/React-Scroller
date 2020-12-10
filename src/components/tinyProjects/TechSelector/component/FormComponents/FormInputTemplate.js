@@ -22,6 +22,7 @@ import "./css/FormInputTemplate.css";
 //        ] }
 //   dividerName: "enter Name Heading In case Of multiple Arguments Only"
 //   dividerDataId : "Extra Id Can Be used For Datasets or accessing Divider"
+//   showValue : "Name Of Toggle ON/OFF Button" 
 //
 // *  Common Parameters
 //
@@ -38,7 +39,7 @@ import "./css/FormInputTemplate.css";
 //? --------- IMP Component Parameters Ends ---------
 
 const FormInputTemplate = (props) => {
-  const [ShowInput, setShowInput] = useState(props.props.length > 1 ? true : false);
+  const [ShowInput, setShowInput] = useState(props.showValue !== undefined ? true : false);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -50,7 +51,7 @@ const FormInputTemplate = (props) => {
       const str = eval("e.target." + i.inputName + ".value");
       if (str !== "") {
         arr.push([i.inputName, str]);
-      } else arr.push([i.inputName, ""]);
+      } else arr.push([i.inputName, "N.A"]);
     });
     // Convert Array To Object
     let obj = {};
@@ -83,13 +84,13 @@ const FormInputTemplate = (props) => {
           <p>{props.dividerName}</p>
           {ShowInput === true ? (
             <button className="InputFormTemplate__showInput" onClick={() => setShowInput(false)}>
-              {" "}
-              show Input
+              {props.showValue}
+              
             </button>
           ) : (
             <button className="InputFormTemplate__showInput" onClick={() => setShowInput(true)}>
-              {" "}
-              show Input
+              {props.showValue}
+              
             </button>
           )}
         </div>

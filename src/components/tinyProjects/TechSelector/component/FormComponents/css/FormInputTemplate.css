@@ -1,14 +1,11 @@
 .FormTemplate {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     text-align: center;
-    max-width: 75vw;
-    min-width: 25vw;
+    max-width: 100vw;
 }
 
 .InputFormTemplate--body {
-    margin-left: 11em;
     align-self: center;
     padding: 0.5em;
 }
@@ -46,12 +43,20 @@
     margin: 0.5em;
 }
 
- .styleP p {
-    width: 18em;
-    padding: 0.5em 0;
-    padding-left: 0.3em ;
-    border: 2px solid black;
+.InputFormTemplate__sidebar--data {
+    max-height: 24rem;
+    overflow: auto;
 }
+
+.InputFormTemplate__sidebar--data p {
+    width: 27vw;
+    font-size: 14px;
+    padding: 0.7rem 0;
+    padding-left: 0.3rem;
+    border: 2px solid black;
+    margin: 0.3em 0;
+}
+
 /*
 .clearfix::after {
     content: "";
