@@ -4,7 +4,6 @@ import "./style.css";
 import "./flags.min.css";
 
 import countriesList from "./countries.json";
-
 class App extends Component {
   state = {
     search: ""

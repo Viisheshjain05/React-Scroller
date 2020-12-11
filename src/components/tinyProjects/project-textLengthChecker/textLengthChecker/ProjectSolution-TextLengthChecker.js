@@ -1,5 +1,4 @@
 import React from "react";
-import Form from "react-bootstrap/Form";
 import style from "./ProjectDetail-TextLengthChecker.module.css";
 
 const TextLength = (props) => {
@@ -18,7 +17,7 @@ const TextLength = (props) => {
 
   return (
     <div>
-      <Form.Control as="textarea" rows="5" size="lg" className={style.FormControl} type="text" placeholder="Readonly input here..." readOnly value={props.text.join(" ")} />
+      <textarea as="textarea" rows="5" size="lg" className={style.FormControl} type="text" placeholder="Readonly input here..." readOnly value={props.text.join(" ")} />
 
       <p>
         Type HERE: <input type="text" onChange={props.change} />{" "}

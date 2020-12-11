@@ -3,16 +3,21 @@ import React from "react";
 
 const WhatNext = () => {
   return (
-    <div>
+    <div> 
+      <p> LIST OF WORK REMAINING TO DO </p>
+
+
       <ul>
+        <li> Minor Modification into techMediaTemplate of site Links  </li>
+        <li> Modification in Search Tech media file As Auto See All options availbe in json file to select Tags </li>
         <li> Add local storage</li>
         <li>
           <p> ADD image drop and Select from os file Explorer </p>
           <p>Use BACKEND DATABASE TO UPLOAD AND INSERT IMAGE</p>
         </li>
         <li> Learn Com Css object Model</li>
-        <li> </li>
-        <li> </li>
+        <li> ADD BACKEND AND UPLOAD </li>
+        <li>  </li>
       </ul>
     </div>
   );

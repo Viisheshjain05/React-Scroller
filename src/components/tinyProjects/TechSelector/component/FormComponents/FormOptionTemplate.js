@@ -81,13 +81,6 @@ const FormOptionTemplate = (props) => {
     );
   };
 
-  // const renderErrorHandling = () => {
-  //   console.error("Wrong Props Type");
-  //   return null;
-  // };
-
-  // If user added form type "button"|| "select" use that else use default "button" type
-  //   if (props.type == undefined) setFormType(props.type);
   return (
     <>
       <div>{props.select === "multiple" ? renderMultipleSelectForm(props) : renderSingleSelectForm(props)}</div>

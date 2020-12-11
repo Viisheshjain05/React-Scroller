@@ -1,168 +1,63 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { useReducer, lazy, Suspense } from "react";
+import ToggleReactConcepts from "./tinyProjects/GettingReactConsepts/ToggleReactConcepts";
 import TextLengthChecker from "./tinyProjects/project-textLengthChecker/TextLengthChecker";
 import SearchCountries from "./tinyProjects/Search/CreatingMySearch";
 import WeatherApp from "./tinyProjects/Weather_App/weatherApp";
 import QuizApp from "./tinyProjects/QuizApp/QuizApp";
-// import UserInputOutput from "./project-userInputoutput/UserInputOutput";
+import TechSelector from "./tinyProjects/TechSelector/TechSelector";
 const UserInputOutput = lazy(() => import("./tinyProjects/project-userInputoutput/UserInputOutput"));
 
-class ToggleProject extends Component {
-  state = {
-    displaySolution: true,
-    displayProjectID: "01",
-    displayName: "project 1",
-    optionValue: "Lime",
-    SelectOptions: { HackerRank: false },
-  };
+// class ToggleProject extends Component {
 
-  // Display Project
-  displayProjectID = () => {
-    // change the Value of Project to "01" where the number of project ends
-
-    this.state.displayProjectID === "01"
-      ? this.setState({ displayProjectID: "02", displayName: "project 2" })
-      : this.state.displayProjectID === "02"
-      ? this.setState({ displayProjectID: "03", displayName: "project 3" })
-      : this.state.displayProjectID === "03"
-      ? this.setState({ displayProjectID: "04", displayName: "project 4" }) // total no. of project is   currently 4 hence stoping it at 1
-      : this.state.displayProjectID === "04"
-      ? this.setState({ displayProjectID: "05", displayName: "project 5" })
-      : this.state.displayProjectID === "05"
-      ? this.setState({ displayProjectID: "06", displayName: "project 6" })
-      : //  this.state.displayProjectID === "06"
-        // ? this.setState({ displayProjectID: "07", project 7 })
-        // : this.state.displayProjectID === "01";
-        this.setState({ displayProjectID: "01", displayName: "project 1" });
-  };
-
-  // Toggle Project Solution
-  displayProjectSolution = () => {
-    this.state.displaySolution === true ? this.setState({ displaySolution: false }) : this.setState({ displaySolution: true });
-  };
-
-  handleChange = (event) => {
-    this.setState({ optionValue: event.target.value });
-  };
-
-  handleSubmit = (event) => {
-    event.preventDefault();
-    if (this.state.optionValue === "HackerRank") {
-      this.setState({ SelectOptions: { HackerRank: true } });
-    }
-
-    if (this.state.optionValue === "Default") {
-      this.setState({ SelectOptions: { Default: true } });
-    }
-
-    if (this.state.optionValue === "HackerRank") {
-      this.setState({ SelectOptions: { HackerRank: true } });
-    }
-
-    if (this.state.optionValue === "HackerRank") {
-      this.setState({ SelectOptions: { HackerRank: true } });
-    } else {
-      this.setState({ SelectOptions: false });
+const initialState = { projectNumber: 0, content: <TechSelector /> };
+const ToggleProject = () => {
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case "increment":
+        return { projectNumber: state.projectNumber + 1, content: GetData(state.projectNumber + 1) };
+      case "decrement":
+        return { projectNumber: state.projectNumber - 1, content: GetData(state.projectNumber - 1) };
+      default:
+        return null;
     }
   };
 
-  render() {
-    console.log(this.state.optionValue);
-    return (
-      <div>
-        {this.state.SelectOptions.HackerRank ? (
-          <>
-            <button type="submit" onClick={this.displayProjectID}>
-              {this.state.displayName}
-            </button>
-          </>
-        ) : null}
+  const GetData = (props) => {
+    // Add your Projects
+    if (props === -1) return null;
+    if (props === 0) return initialState.content;
+    if (props === 1) return <ToggleReactConcepts />;
+    if (props === 2) return <SearchCountries />;
+    if (props === 3) return <QuizApp />;
+    if (props === 4) return <WeatherApp />;
+    if (props === 5) return <TextLengthChecker />;
+    if (props === 6) {
+      return (
+        <Suspense fallback={<div>"Loading..."</div>}>
+          <UserInputOutput />
+        </Suspense>
+      );
+    }
+    if (props === 7) return null;
+    // if (props === 8) return <UserInputOutput />;
+    // if (props === 9) return <UserInputOutput />;
+    // if (props === 10) return <UserInputOutput />;
+  };
 
-        <button type="submit" onClick={this.displayProjectID}>
-          {this.state.displayName}
-        </button>
-        {/* CREATING A SORTING FUNCTIONALITY */}
-        <form  onSubmit={(e) => this.handleSubmit(e)}>
-          <label>
-            Pick your favorite flavor:
-            <select value={this.state.value} onChange={(e) => this.handleChange(e)}>
-              <option value="Default">Default</option>
-              <option value="lime">Lime</option>
-              <option value="HackerRank">HackerRank</option>
-              <option value="mango">Mango</option>
-            </select>
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+  const [state, dispatch] = useReducer(reducer, initialState);
 
-        {/*  */}
-        {/* <SelectFeature /> */}
-
-        <button type="submit" onClick={this.displayProjectSolution}>
-          {this.state.displaySolution === true ? "Hide Solution" : "Watch Solution"}
-        </button>
-
-        {/******************* Add Project To Toggle Start **********************/}
-
-        {this.state.displayProjectID === "01" ? (
-          <TextLengthChecker DisplaySolution={this.state.displaySolution} />
-        ) : this.state.displayProjectID === "02" ? (
-          <Suspense fallback={<div>"Loading..."</div>}>
-            <UserInputOutput DisplaySolution={this.state.displaySolution} />
-          </Suspense>
-        ) : this.state.displayProjectID === "03" ? (
-          <SearchCountries />
-        ) : this.state.displayProjectID === "04" ? (
-          <WeatherApp />
-        ) : this.state.displayProjectID === "05" ? (
-          <QuizApp />
-        ) : // ) : this.state.displayProjectID === "03" ? (
-        // ADD YOUR PROJECT HERE
-
-        // <Suspense fallback={<div>"Loading..."</div>}>
-        //   <UserInputOutput DisplaySolution={this.state.displaySolution} />
-        // </Suspense>
-        null}
-
-        {/********************* Add Project To Toggle END **********************/}
-      </div>
-    );
+  if (state.content === null) {
+    state.projectNumber = initialState.projectNumber;
+    state.content = initialState.content;
   }
-}
+
+  return (
+    <div>
+      <button onClick={() => dispatch({ type: "increment" })}> next Project </button>
+      <button onClick={() => dispatch({ type: "decrement" })}> prev Project </button>
+      {state.content}
+    </div>
+  );
+};
+
 export default ToggleProject;
-
-// const SelectFeature = () => {
-//   const [state, setState] = useState({ value: "lime" });
-
-//   const handleChange = (event) => {
-//     setState({ value: event.target.value });
-//   };
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault();
-//     if (event.target.value === "HackerRank") {
-//       return <ToggleProject Category={"HackerRank"} />;
-//     }
-//   };
-//   console.log(state);
-//   return (
-//     <>
-//       <form onSubmit={(e) => handleSubmit(e)}>
-//         <label>
-//           Pick your favorite flavor:
-//           <select value={state.value} onChange={(e) => handleChange(e)}>
-//             <option value="grapefruit">Grapefruit</option>
-//             <option value="lime">Lime</option>
-//             <option value="HackerRank">HackerRank</option>
-//             <option value="mango">Mango</option>
-//           </select>
-//         </label>
-//         <input type="submit" value="Submit" />
-//       </form>
-//     </>
-//   );
-// };
-
-// const HackerRank = () => {
-//   console.log("basjfb");
-//   return <h1>Hii I got here</h1>;
-// };

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProjectDetail from "./userInputOutput/ProjectDetail-UserInputOutput";
 import UserOutput from "./userInputOutput/UserOutput";
 import UserInput from "./userInputOutput/UserInput";
-import DisplaySolution from "../DisplaySolution";
 
 const UserInputOutput = (props) => {
   const [PersonName, setPersonName] = useState({ personName: "Viishesh Jain", Name: "" });
@@ -32,7 +31,6 @@ const UserInputOutput = (props) => {
     <div>
       <ProjectDetail />
 
-      <DisplaySolution toggle={props.DisplaySolution}>
         <div>
           <UserOutput name={PersonName.personName} age={PersonId.personId}>
             Hiilet see
@@ -48,7 +46,6 @@ const UserInputOutput = (props) => {
             Update
           </button>
         </div>
-      </DisplaySolution>
     </div>
   );
 };

@@ -14,7 +14,6 @@ const WeatherApp = () => {
     const Url = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${Api_Key.ApiKey}&units=metric`);
     const data = await Url.json();
 
-    console.log("data", data);
 
     // Get Data and store into State
     setWeatherData({
@@ -27,7 +26,6 @@ const WeatherApp = () => {
     });
   };
   // fetchData();
-  console.log("WeatherData", WeatherData);
   return (
     <div>
       <Form fetchData={fetchData} />

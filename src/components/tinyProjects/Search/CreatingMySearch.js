@@ -12,7 +12,7 @@ const SearchCountries = () => {
     return (
       <>
         <div style={{ margin: "20px", border: " 2px solid black ", textAlign: "center" }}>
-          {/*  eslint-disable-next-line*/}  {/* //because alt not used inside img tag */}
+          {/*  eslint-disable-next-line*/} {/* //because alt not used inside img tag */}
           <img className={"flag flag-" + country.code.toLowerCase()} />
           <p>{country.code}</p>
           <p>{country.name}</p>
@@ -51,7 +51,7 @@ const SearchCountries = () => {
 
   return (
     <div>
-      <p style={{ textAlign: "end ", paddingTop: "10px", paddingBottom: "20px", paddingRight: "20px", position: "inherit" }}>
+      <div style={{ textAlign: "end ", paddingTop: "10px", paddingBottom: "20px", paddingRight: "20px", position: "inherit" }}>
         <form>
           {" "}
           {/* onSubmit={(e) => this.handleSubmit(e)}*/}
@@ -72,7 +72,7 @@ const SearchCountries = () => {
           </label>
           {/* <input type="submit" value="Submit" /> */}
         </form>
-      </p>
+      </div>
 
       <p style={{ textAlign: "center ", paddingTop: "10px", paddingBottom: "20px" }}>
         Search :{" "}
@@ -84,7 +84,11 @@ const SearchCountries = () => {
         />
       </p>
 
-      <div>{filteredCountry.map((country) => renderCountry(country))}</div>
+      <>
+        {filteredCountry.map((country, ind) => (
+          <React.Fragment key={ind}>{renderCountry(country)}</React.Fragment>
+        ))}
+      </>
     </div>
   );
 };

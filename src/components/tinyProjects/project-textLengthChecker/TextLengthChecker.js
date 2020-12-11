@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ProjectDetails from "./textLengthChecker/ProjectDetail-TextLengthChecker";
 import ProjectSolution from "./textLengthChecker/ProjectSolution-TextLengthChecker";
 import Char from "./textLengthChecker/CharSol";
-import DisplaySolution from "../DisplaySolution";
 
 const TextLengthChecker = (props) => {
   const [TextValue, setTextValue] = useState({ text: [] });
@@ -22,13 +21,11 @@ const TextLengthChecker = (props) => {
     <div>
       <ProjectDetails />
 
-      <DisplaySolution toggle={props.DisplaySolution}>
         {TextValue.text.map((el, ind) => {
           return <Char key={ind} text={el} clicked={() => removeText(ind)} />;
         })}
 
         <ProjectSolution change={(event) => countLength(event)} text={TextValue.text} />
-      </DisplaySolution>
     </div>
   );
 };

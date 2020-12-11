@@ -1,10 +1,8 @@
 import React from "react";
 import "./css/TechMediaTemplete.css";
-// import Tech from "../Tech.json";
 
 const TechTemplete = (props) => {
-  console.log(props);
-
+  
   const RenderTech = (props) => {
     return (
       <div key={props.props.length} className="techMedia">

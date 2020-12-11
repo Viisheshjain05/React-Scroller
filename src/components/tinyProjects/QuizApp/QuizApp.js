@@ -35,7 +35,6 @@ const QuizApp = () => {
     );
   };
 
-  console.log(`score`, Score);
 
   return (
     <>

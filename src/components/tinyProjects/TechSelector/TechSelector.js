@@ -6,13 +6,16 @@ const LayoutBulider = () => {
   const [SwitchButton, setSwitchButton] = useState(true);
   return (
     <>
+    <div>
+      
         <button style={{ marginLeft: "10em" }} type="submit" onClick={() => setSwitchButton(false)}>
           Add Form
         </button>
 
         <button style={{ marginLeft: "55em" }} type="submit" onClick={() => setSwitchButton(true)}>
-          search Form
+          Search Form
         </button>
+    </div>
 
       {SwitchButton ? <SearchTechItem /> : <AddTechItem />}
     </>
