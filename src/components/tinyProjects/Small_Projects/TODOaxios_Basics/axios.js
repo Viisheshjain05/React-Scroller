@@ -1,17 +1,23 @@
-// TODO Create a basic code structure determining all posible code can be done using axios or jsonPlaceholder
+// ? We Can create A instances or copy of axios for using manually in files needed
 
-import React from "react";
 import Axios from "axios";
+// ? Just like defaults parameter we can add here another url and use it in files we want like this we can create multiple instances or configuratunes for individual files needed
 
-const AxiosBasic = () => {
-  // Axios.get("https://jsonplaceholder.typicode.com/todos/1").then((response) => console.log(response));
+const instance = Axios.create({
+  baseURL: "https://jsonplaceholder.typicode.com",
+  //   headers: { ["AUTHORIZATION"]: "auth - token" },
+});
+// We Can Do In Both ways as Axios.create just create a copy of axios
+// instance.defaults.baseURL = "https://jsonplaceholder.typicode.com";
+instance.defaults.headers.common["AUTHORIZATION"] = "auth Token From instance";
 
-  // Axios.post("https://jsonplaceholder.typicode.com/todos", data).then(res=>console.log(res))
+// We can also add interceptors inside instences if needed 
+// Axios.interceptors.request.use(
+//   (req) => {
+//     console.log(req);
+//     //! Edit req before sending
+//     return req;
+//   },
 
-  // Axios.delete("https://jsonplaceholder.typicode.com/todos/1").then(res=>console.log(res))
 
-  // Axios.defaults.baseURL = 'https://jsonplaceholder.typicode.com'
-  return <div>The Common needed commands commented out</div>;
-};
-
-export default AxiosBasic;
+export default instance;

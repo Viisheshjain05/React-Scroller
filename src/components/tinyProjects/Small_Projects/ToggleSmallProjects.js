@@ -1,5 +1,7 @@
-import React, { useReducer, lazy ,Suspense } from "react";
+import React, { useReducer, lazy, Suspense } from "react";
 import TextLengthChecker from "./project-textLengthChecker/TextLengthChecker";
+import AxiosBasic from "./TODOaxios_Basics/Axios_Basic";
+
 const UserInputOutput = lazy(() => import("./project-userInputoutput/UserInputOutput"));
 
 const initialState = { projectNumber: 0, content: <TextLengthChecker /> };
@@ -22,9 +24,11 @@ const ToggleReactConcepts = () => {
           <UserInputOutput />
         </Suspense>
       );
-    if (props === 2) return null;
-    // if (props === 3) return null;
+    if (props === 2) return <AxiosBasic />;
+    if (props === 3) return null;
     // if (props === 4) return null;
+    // if (props === 5) return null;
+    // if (props === 6) return null;
   };
   const [state, dispatch] = useReducer(reducer, initialState);
 
