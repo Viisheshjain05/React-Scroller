@@ -207,5 +207,6 @@
             "figma": "N.A"
         },
         "licence": "MIT License"
-    }
+    },
+{"name":"Axios","id":"uniqIdLib","imageUrl":"http://placehold.it/400x200&text=","tags":{"primaryTag":["Front-end development "," Back-end development"],"secondaryTag":["XMLHttpRequest "," js"],"tersiaryTag":["Http"," Promise API ","Javascript Utilities & Libraries"]},"links":{"websiteUrl":"N.A","github":"https://github.com/axios/axios","facebook":"https://www.npmjs.com/package/axios","instagram":"https://gitter.im/mzabriskie/axios","linkden":"N.A","figma":"N.A"},"licence":"MIT License"}
 ]

@@ -1,0 +1,63 @@
+.todo__header--JsonBtn {
+    display: flex;
+    flex-direction: column;
+    width: 1040px;
+    margin: 4em auto;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+
+.todo__header--JsonBtn input {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1em;
+    flex: 0 0 20%;
+    background-color: rgb(83, 229, 255);
+}
+
+.todo__header--JsonBtn form {
+    padding-bottom: 2em;
+    display: flex;
+    margin-top: 0.5em;
+    align-self: center;
+}
+
+.todo__header--JsonBtn form input {
+    background-color: initial;
+    margin-left: 0.3em;
+}
+
+.todo__body--Result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 1040px;
+    padding-bottom: 4em;
+    margin: 0.5em auto;
+    border-bottom: 2px solid black;
+}
+
+.todo__body--item {
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.alignLeft {
+    margin-left: auto;
+}
+
+.todo__body--item input {
+    padding: 1em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 1em;
+}
+
+.todo__body--item span {
+    padding: 1rem;
+    font-weight: normal;
+    font-size: 1.2em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 1rem;
+}

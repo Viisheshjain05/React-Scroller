@@ -1,0 +1,34 @@
+[
+    {
+        "Todo": "Add [Projects, CommonTypes To Select, Multiple Project Todos In one page, completed into json  ] into Todo "
+    },
+    {
+        "Todo": "Add Mark Completed Into json to save forward"
+    },
+    {
+        "Todo": "Add favoratees Todos into json "
+    },
+    {
+        "Todo": "Create Chrome extention with Todo App"
+    },
+    {
+        "ProjectName": "TechSelector",
+        "type": "TODO_FEATURE",
+        "Todo": " Manage Bookmark in tech Selector in Standardised way by automaticaaly diffrentiating b/w categories of bookmark by using data from preinstalled links"
+    },
+    {
+        "Project": "TechSelector",
+        "type": "Add_functionality ",
+        "Todo": "Add All Firebase Features [Hoisting , Realtime Database , autehentification ] etc, connect database of irebase with hoisting platform other than json to get data on go."
+    },
+    {
+        "Project": "Docs Or Liabrary example Code Creator ",
+        "type": "New project_feature ",
+        "Todo": " To create Easy understanding of liabraries create a project to hold all code examples we can do with library like [axios features ex : [get, create, instances, interseptors, post, delete]] etc to learn in betterway how liabraries works or easy docs to facilitate future refrences "
+    },
+    {
+        "Project": "Tech Selector ",
+        "type": "minor Improvement",
+        "Todo": " Removeid and use name as Unique id and add status to show unique availability of name"
+    }
+]
