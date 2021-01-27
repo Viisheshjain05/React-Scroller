@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Scroller/static/css/main.a574dfba.chunk.css",
-    "main.js": "/React-Scroller/static/js/main.be1f1acb.chunk.js",
-    "main.js.map": "/React-Scroller/static/js/main.be1f1acb.chunk.js.map",
+    "main.js": "/React-Scroller/static/js/main.d1e18a56.chunk.js",
+    "main.js.map": "/React-Scroller/static/js/main.d1e18a56.chunk.js.map",
     "runtime-main.js": "/React-Scroller/static/js/runtime-main.a395d435.js",
     "runtime-main.js.map": "/React-Scroller/static/js/runtime-main.a395d435.js.map",
     "static/js/2.94465248.chunk.js": "/React-Scroller/static/js/2.94465248.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.a395d435.js",
     "static/js/2.94465248.chunk.js",
     "static/css/main.a574dfba.chunk.css",
-    "static/js/main.be1f1acb.chunk.js"
+    "static/js/main.d1e18a56.chunk.js"
   ]
 }
