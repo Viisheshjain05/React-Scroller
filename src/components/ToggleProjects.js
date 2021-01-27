@@ -45,8 +45,8 @@ const ToggleProject = () => {
 
   return (
     <>
-        <button style={{margin: "0 10px"}}  onClick={() => dispatch({ type: "increment" })}> next Project </button>
         <button style={{margin: "0 10px"}} onClick={() => dispatch({ type: "decrement" })}> prev Project </button>
+        <button style={{margin: "0 10px"}}  onClick={() => dispatch({ type: "increment" })}> next Project </button>
       {state.content}
     </>
   );
