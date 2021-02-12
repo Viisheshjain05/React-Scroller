@@ -34,24 +34,28 @@ const ForwardingRef = () => {
   };
 
   return (
-    <div style={{ color: "lightcoral", textAlign: "center", alignSelf: "center", fontSize: "2rem" }}>
-      <p>
-        {" "}
-        Select 1 : <input type="text" ref={inputRef1} onKeyDown={KeyEnterFirst} />
-      </p>
-      <p>
-        {" "}
-        Select 2 : <input type="text" ref={inputRef2} onKeyDown={KeyEnterNext} />
-      </p>
-      <p>
-        {" "}
-        Select 3 : <input type="text" ref={inputRef3} onKeyDown={KeyEnterLast} />
-      </p>
-      <button type="submit" ref={inputRef4} onClick={(e) => FocusMe(e)}>
-        {" "}
-        Submit
-      </button>
-    </div>
+    <>
+      <h3 className="text-xl-center mb-5 mt-1"> Press Tab To Change Focus </h3>
+
+      <div style={{ color: "lightcoral", textAlign: "center", alignSelf: "center", fontSize: "2rem" }}>
+        <p>
+          {" "}
+          Select 1 : <input type="text" ref={inputRef1} onKeyDown={KeyEnterFirst} />
+        </p>
+        <p>
+          {" "}
+          Select 2 : <input type="text" ref={inputRef2} onKeyDown={KeyEnterNext} />
+        </p>
+        <p>
+          {" "}
+          Select 3 : <input type="text" ref={inputRef3} onKeyDown={KeyEnterLast} />
+        </p>
+        <button type="submit" ref={inputRef4} onClick={(e) => FocusMe(e)}>
+          {" "}
+          Submit
+        </button>
+      </div>
+    </>
   );
 };
 
