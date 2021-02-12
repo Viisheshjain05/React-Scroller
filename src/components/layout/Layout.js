@@ -1,6 +1,7 @@
 import React from "react";
 import ToggleProjects from "../ToggleProjects";
 
+// import MathFunction from '../tinyProjects/Todo mathFunctions/athFunctions.jsx'
 // import AxiosBasic from "../tinyProjects/Small_Projects/TODOaxios_Basics/axios";
 // import Todos from "../tinyProjects/GettingReactConsepts/Todos_useReducer/Todos";
 // import TechSelector from "../tinyProjects/TechSelector/TechSelector"
@@ -14,9 +15,9 @@ import ToggleProjects from "../ToggleProjects";
 const Layout = () => {
   return (
     <>
-      <ToggleProjects /> 
+      <ToggleProjects />
 
-
+      {/* <MathFunction /> */}
       {/* <ToggleReactConcepts /> */}
       {/* <TechUse/> */}
       {/* <QuizApp /> */}
