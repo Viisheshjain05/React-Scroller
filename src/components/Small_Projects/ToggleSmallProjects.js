@@ -1,6 +1,5 @@
 import React, { useReducer, lazy, Suspense } from "react";
 import TextLengthChecker from "./project-textLengthChecker/TextLengthChecker";
-// import AxiosBasic from "./TODOaxios_Basics/Axios_Basic";
 
 const UserInputOutput = lazy(() => import("./project-userInputoutput/UserInputOutput"));
 

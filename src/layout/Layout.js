@@ -1,5 +1,5 @@
 import React from "react";
-import ToggleProjects from "../utils/ToggleProjects";
+import ToggleProjects from "../utils/ToggleComponentProjects";
 
 // !FOR TESTING PURPOSES
 // import MathFunction from '../tinyProjects/Todo mathFunctions/athFunctions.jsx'

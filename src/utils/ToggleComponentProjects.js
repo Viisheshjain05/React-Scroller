@@ -2,28 +2,29 @@ import React, { useReducer } from "react";
 
 import ToggleReactConcepts from "../components/GettingReactConsepts/ToggleReactConcepts";
 import SearchCountries from "../components/Search/CreatingMySearch";
-import WeatherApp from "../components/Weather_App/weatherApp";
 import QuizApp from "../components/QuizApp/QuizApp";
 import TechSelector from "../components/TechSelector/TechSelector";
 import ToggleSmallProjects from "../components/Small_Projects/ToggleSmallProjects";
 import MathFunction from "../components/Todo mathFunctions/MathFunctions.jsx";
 
-const initialState = { projectNumber: 0, content: <TechSelector /> };
+// Todo Stoping File AS Not Working Properly Create Your Own Api And then Add To Project
+// import WeatherApp from "../components/Weather_App/weatherApp";
+
+const initialState = { projectNumber: 0, TotalProjects: 5, content: <TechSelector /> };
 const ToggleProject = () => {
   const reducer = (state, action) => {
     switch (action.type) {
       case "increment":
-        return { projectNumber: state.projectNumber + 1, content: GetData(state.projectNumber + 1) };
+        return { ...state, projectNumber: state.projectNumber + 1, content: GetData(state.projectNumber + 1) };
+
       case "decrement":
         let decProjectNumber;
         if (state.projectNumber === 0) {
-          // ? Change This Number To Get Previous At zero Position
-          decProjectNumber = 5;
+          decProjectNumber = state.TotalProjects;
         } else {
           decProjectNumber = state.projectNumber - 1;
         }
-
-        return { projectNumber: decProjectNumber, content: GetData(decProjectNumber - 1) };
+        return { ...state, projectNumber: decProjectNumber, content: GetData(decProjectNumber) };
       default:
         return null;
     }
@@ -33,16 +34,18 @@ const ToggleProject = () => {
     // Add your Projects
     if (props === -1) return null;
     if (props === 0) return initialState.content;
-    if (props === 1) return <WeatherApp />;
-    if (props === 2) return <SearchCountries />;
-    if (props === 3) return <QuizApp />;
-    if (props === 4) return <MathFunction />;
-    if (props === 5) return <ToggleSmallProjects />;
-    if (props === 6) return <ToggleReactConcepts />;
-    if (props === 7) return null;
-    // if (props === 8) return <UserInputOutput />;
-    // if (props === 9) return <UserInputOutput />;
-    // if (props === 10) return <UserInputOutput />;
+    if (props === 1) return <SearchCountries />;
+    if (props === 2) return <QuizApp />;
+    if (props === 3) return <MathFunction />;
+    if (props === 4) return <ToggleSmallProjects />;
+    if (props === 5) return <ToggleReactConcepts />;
+    if (props === 6) return null;
+    // if (props === 1) return null;
+    // if (props === 1) return null;
+    // if (props === 1) return null;
+    // if (props === 1) return null;
+    // ! CoRRENT IT TO WORK ACCORDINGLY
+    // if (props === 7) return <WeatherApp />;
   };
 
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -56,7 +59,7 @@ const ToggleProject = () => {
     <>
       <button style={{ margin: "0 10px" }} onClick={() => dispatch({ type: "decrement" })}>
         {" "}
-        prev Project{" "}
+        {state.projectNumber === 0 ? "Last Project" : "prev Project"}
       </button>
       <button style={{ margin: "0 10px" }} onClick={() => dispatch({ type: "increment" })}>
         {" "}
