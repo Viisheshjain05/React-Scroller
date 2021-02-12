@@ -28,13 +28,13 @@ const ForwardingRef = () => {
   };
   const KeyEnterLast = (e) => {
     if (e.key === "Enter") {
-        console.log("key" , e.key) 
+      console.log("key", e.key);
       inputRef1.current.focus();
     }
   };
 
   return (
-    <div style={{ color: "lightcoral", textAlign: "center", alignSelf: "center", marginTop: "10rem", fontSize: "2rem" }}>
+    <div style={{ color: "lightcoral", textAlign: "center", alignSelf: "center", fontSize: "2rem" }}>
       <p>
         {" "}
         Select 1 : <input type="text" ref={inputRef1} onKeyDown={KeyEnterFirst} />

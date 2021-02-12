@@ -31,21 +31,26 @@ const UserInputOutput = (props) => {
     <div>
       <ProjectDetail />
 
-        <div>
-          <UserOutput name={PersonName.personName} age={PersonId.personId}>
-            Hiilet see
-          </UserOutput>
+      <div>
+        <UserOutput name={PersonName.personName} age={PersonId.personId}>
+          Hiilet see
+        </UserOutput>
 
-          <UserInput userName={PersonName.personName || PersonName.Name} id={PersonId.personId || PersonId.Id} changeName={(e) => updateNameHandler(e)} changeId={(e) => updateIdHandler(e)} />
+        <UserInput
+          userName={PersonName.personName || PersonName.Name}
+          id={PersonId.personId || PersonId.Id}
+          changeName={(e) => updateNameHandler(e)}
+          changeId={(e) => updateIdHandler(e)}
+        />
 
-          <button type="submit" onClick={autoAssignHandler}>
-            Auto Assign
-          </button>
+        <button type="submit" onClick={autoAssignHandler}>
+          Auto Assign
+        </button>
 
-          <button type="submit" onClick={updateHandler}>
-            Update
-          </button>
-        </div>
+        <button type="submit" onClick={updateHandler}>
+          Update
+        </button>
+      </div>
     </div>
   );
 };

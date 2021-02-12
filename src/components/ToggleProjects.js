@@ -6,6 +6,7 @@ import WeatherApp from "./tinyProjects/Weather_App/weatherApp";
 import QuizApp from "./tinyProjects/QuizApp/QuizApp";
 import TechSelector from "./tinyProjects/TechSelector/TechSelector";
 import ToggleSmallProjects from "./tinyProjects/Small_Projects/ToggleSmallProjects";
+import MathFunction from "./tinyProjects/Todo mathFunctions/MathFunctions.jsx";
 
 const initialState = { projectNumber: 0, content: <TechSelector /> };
 const ToggleProject = () => {
@@ -14,7 +15,15 @@ const ToggleProject = () => {
       case "increment":
         return { projectNumber: state.projectNumber + 1, content: GetData(state.projectNumber + 1) };
       case "decrement":
-        return { projectNumber: state.projectNumber - 1, content: GetData(state.projectNumber - 1) };
+        let decProjectNumber;
+        if (state.projectNumber === 0) {
+          // ? Change This Number To Get Previous At zero Position
+          decProjectNumber = 5;
+        } else {
+          decProjectNumber = state.projectNumber - 1;
+        }
+
+        return { projectNumber: decProjectNumber, content: GetData(decProjectNumber - 1) };
       default:
         return null;
     }
@@ -27,11 +36,11 @@ const ToggleProject = () => {
     if (props === 1) return <WeatherApp />;
     if (props === 2) return <SearchCountries />;
     if (props === 3) return <QuizApp />;
-    if (props === 4) return <ToggleReactConcepts />;
+    if (props === 4) return <MathFunction />;
     if (props === 5) return <ToggleSmallProjects />;
-    if (props === 6) return null;
-    // if (props === 9) return <UserInputOutput />;
-    // if (props === 9) return <UserInputOutput />;
+    if (props === 6) return <ToggleReactConcepts />;
+    if (props === 7) return null;
+    // if (props === 8) return <UserInputOutput />;
     // if (props === 9) return <UserInputOutput />;
     // if (props === 10) return <UserInputOutput />;
   };
@@ -45,8 +54,14 @@ const ToggleProject = () => {
 
   return (
     <>
-        <button style={{margin: "0 10px"}} onClick={() => dispatch({ type: "decrement" })}> prev Project </button>
-        <button style={{margin: "0 10px"}}  onClick={() => dispatch({ type: "increment" })}> next Project </button>
+      <button style={{ margin: "0 10px" }} onClick={() => dispatch({ type: "decrement" })}>
+        {" "}
+        prev Project{" "}
+      </button>
+      <button style={{ margin: "0 10px" }} onClick={() => dispatch({ type: "increment" })}>
+        {" "}
+        next Project{" "}
+      </button>
       {state.content}
     </>
   );
