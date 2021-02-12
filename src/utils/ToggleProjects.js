@@ -1,12 +1,12 @@
 import React, { useReducer } from "react";
 
-import ToggleReactConcepts from "./tinyProjects/GettingReactConsepts/ToggleReactConcepts";
-import SearchCountries from "./tinyProjects/Search/CreatingMySearch";
-import WeatherApp from "./tinyProjects/Weather_App/weatherApp";
-import QuizApp from "./tinyProjects/QuizApp/QuizApp";
-import TechSelector from "./tinyProjects/TechSelector/TechSelector";
-import ToggleSmallProjects from "./tinyProjects/Small_Projects/ToggleSmallProjects";
-import MathFunction from "./tinyProjects/Todo mathFunctions/MathFunctions.jsx";
+import ToggleReactConcepts from "../components/GettingReactConsepts/ToggleReactConcepts";
+import SearchCountries from "../components/Search/CreatingMySearch";
+import WeatherApp from "../components/Weather_App/weatherApp";
+import QuizApp from "../components/QuizApp/QuizApp";
+import TechSelector from "../components/TechSelector/TechSelector";
+import ToggleSmallProjects from "../components/Small_Projects/ToggleSmallProjects";
+import MathFunction from "../components/Todo mathFunctions/MathFunctions.jsx";
 
 const initialState = { projectNumber: 0, content: <TechSelector /> };
 const ToggleProject = () => {
