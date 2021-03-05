@@ -1,0 +1,50 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+//? NAMING CONVENTIONS
+// syntax-color-range-opacity
+
+.hidden {
+  display: none;
+}
+
+// Cursor
+.cur {
+  // Pointor
+  &-poi {
+    cursor: pointer;
+  }
+}
+.z-1 {
+  z-index: 1;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+}
+.block {
+  display: block;
+}
+
+//! UTILITIES
+// FONT || Typography
+@import "./utilities/fontUtil";
+
+// BACKGROUND
+@import "./utilities/backgroundUtil";
+
+// BOX MODLE
+@import "./utilities/boxModleUtil";

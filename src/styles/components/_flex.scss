@@ -1,0 +1,136 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+//? ALL FLEX LAYOUT CODE
+// Todo Create A layout Classes
+
+// NEW CODE CHANGES FRO MAJOR VERSION RELIESE
+.jc {
+  &-sb {
+    justify-content: space-between;
+  }
+  &-sa {
+    justify-content: space-around;
+  }
+  &-fs {
+    justify-content: flex-start;
+  }
+}
+
+.ai {
+  &-c {
+    align-items: center;
+  }
+}
+
+.align {
+  &-end {
+    align-self: flex-end;
+  }
+  &-start {
+    align-self: flex-start;
+  }
+}
+
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+}
+.row,
+.col {
+  &1-12 {
+    flex: 1;
+  }
+  &2-12 {
+    flex: 2;
+  }
+  &3-12 {
+    flex: 3;
+  }
+  &4-12 {
+    flex: 4;
+  }
+  &5-12 {
+    flex: 5;
+  }
+  &6-12 {
+    flex: 6;
+  }
+  &7-12 {
+    flex: 7;
+  }
+  &8-12 {
+    flex: 8;
+  }
+  &9-12 {
+    flex: 9;
+  }
+  &10-12 {
+    flex: 10;
+  }
+  &11-12 {
+    flex: 11;
+  }
+  &12-12 {
+    flex: 12;
+  }
+}
+
+
+// ! LEGACY CODE TO BE REMOVE IN MAJOR VERSION
+.row {
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-jc-sa {
+    justify-content: space-around;
+  }
+
+  &-jc-fs {
+    justify-content: flex-start;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+.col {
+  &-jc- {
+    &sb {
+      justify-content: space-between;
+    }
+
+    &sa {
+      justify-content: space-around;
+    }
+
+    &s {
+      justify-content: flex-start;
+    }
+  }
+  &-ai- {
+    &c {
+      align-items: center;
+    }
+    &end {
+      align-items: flex-end;
+    }
+  }
+}
+
+.flexself-start {
+  align-self: flex-start;
+}
+
+// ! Legacy Code To be Removed In major Release

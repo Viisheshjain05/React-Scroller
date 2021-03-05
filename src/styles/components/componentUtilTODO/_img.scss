@@ -1,0 +1,51 @@
+.svg {
+  &--hotel {
+    background: center / contain url("../img/svg/hotel.svg") no-repeat;
+  }
+
+  &--feature {
+    background: center / contain url("../img/svg/aircraft-take-off.svg")
+      no-repeat;
+  }
+
+  &--car {
+    background: center / contain url("../img/svg/car.svg") no-repeat;
+  }
+
+  &--travelling {
+    background: center / contain url("../img/svg/travelling.svg") no-repeat;
+  }
+
+  &--star {
+    background: center / contain url("../img/svg/star.svg") no-repeat;
+  }
+}
+
+.png {
+  width: auto;
+  height: auto;   
+
+  &-user-1 {
+    background: center / contain url("../img/png/user-1.jpg") no-repeat;
+  }
+
+  &-user-2 {
+    background: center / contain url("../img/png/user-2.jpg") no-repeat;
+  }
+
+  &-user-3 {
+    background: center / contain url("../img/png/user-3.jpg") no-repeat;
+  }
+
+  &-user-4 {
+    background: center / contain url("../img/png/user-4.jpg") no-repeat;
+  }
+  
+  &-user-5 {
+    background: center / contain url("../img/png/user-5.jpg") no-repeat;
+  }
+  
+  &-user-6 {
+      background: center / contain url("../img/png/user-6.jpg") no-repeat;
+  }
+}

@@ -1,0 +1,81 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+//? BASE COMPONENT PARAMS
+
+// font
+$default-font-size: 1rem;
+
+// color
+$color-primary: #7ed56f;
+$color-grey-dark: rgba(15, 15, 15, 0.9);
+$color-royalBlue: #316fea;
+$color-black: rgba(5, 5, 5, 0.9);
+$color-white-light: rgb(245, 245, 245);
+$color-bg-base: #dddddd;
+$color-text: #363946;
+
+// border
+$input-lightblue-border: 1px solid $color-royalBlue;
+$border-transparent: 1px solid transparent;
+
+// ------------------------ BASE COMPONENT START ------------------------
+
+button {
+  // Typography
+  font-size: $default-font-size;
+  text-decoration: none;
+  background-color: $color-bg-base;
+
+  // Box-Model
+  border: none;
+  border-radius: 15%;
+  border-bottom: 2px solid transparent;
+  margin: 2px;
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    outline: none;
+    border-bottom: 2px solid red;
+  }
+}
+
+input {
+  // Typography
+  background-color: lighten($color: $color-bg-base, $amount: 10);
+  font-size: $default-font-size;
+  color: $color-text;
+  width: 100%;
+
+  // Box-Model
+  border-radius: 0.3em;
+  border: $border-transparent;
+  padding: 0.5em;
+  margin: 0.1em;
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-radius: 0.3em;
+    border: $input-lightblue-border;
+  }
+}
+
+.h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+// ------------------------ BASE COMPONENT END ------------------------

@@ -1,0 +1,80 @@
+.hotel-detail {
+  display: flex;
+}
+
+.des {
+  flex: 0 0 50%;
+  margin: 3em;
+  font-size: 1.5em;
+  padding: 2em;
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  &__summary {
+    margin-bottom: 2em;
+    &-overview {
+      margin-bottom: 2em;
+    }
+    &-block {
+      padding-bottom: 3em;
+      border-bottom: var(--line);
+    }
+  }
+
+  &__includes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3em;
+    border-bottom: var(--line);
+
+    &-item {
+      flex: 0 1 50%;
+      padding: 0.5em;
+
+      &::before {
+        content: "";
+        display: inline-block;
+        width: 0.7em;
+        height: 0.7em;
+        background: center / cover url(../img/svg/chevron-thin-right.svg)
+          no-repeat;
+        margin-right: 0.4em;
+      }
+    }
+  }
+
+  &__rec {
+    display: flex;
+    justify-content: space-between;
+    margin: 5em auto;
+    height: 5em;
+
+    &-text {
+      font-size: 1.1em;
+      color: var(--color-grey-dark-1);
+    }
+
+    &-user {
+      display: flex;
+
+      &--img {
+        border: 2px solid white;
+        width: 3.4em;
+        height: 3.4em;
+        border-radius: 50%;
+
+        &:not(:first-child) {
+          margin-left: -0.6em;
+        }
+      }
+    }
+  }
+}
+
+.user-review {
+  flex: 0 0 auto;
+  margin-left: 5em;
+//   width: 100%;
+}

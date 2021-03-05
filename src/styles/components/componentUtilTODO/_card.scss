@@ -1,0 +1,142 @@
+.card {
+  perspective: 35em;
+  -webkit-perspective: 35em;
+  // box-shadow: -2px 6px 19px 0px #ac0707;
+  position: relative;
+  margin: 0em 3em;
+  margin-bottom: 10em;
+  transition: all 1s;
+  height: 80vh;
+
+  &__side {
+    width: 25vw;
+    background-color: $color-white-light;
+    height: 80vh;
+    transition: all 1s ease;
+    position: absolute;
+    backface-visibility: hidden;
+    overflow: hidden;
+
+    // &--front {
+    //   &-1 {
+    //     background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-light-grey-1,
+    //       $color-secondary-light
+    //     );
+    //   }
+    //   &-2 {
+    //     background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-light-grey-1,
+    //       $color-primary-light
+    //     );
+    //   }
+    //   &-3 {
+    //     background-image: linear-gradient(
+    //       to right bottom,
+    //       $color-light-grey-1,
+    //       $color-tersiary-light
+    //     );
+    //   }
+    // }
+
+    &--back {
+      transform: rotateY(-180deg);
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-light-grey-1,
+          darken($color: $color-secondary-light, $amount: 10%)
+        );
+      }
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-light-grey-1,
+          $color-primary-dark
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-light-grey-1,
+          $color-tersiary-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__heading {
+    font: italic 700 1.3rem/1.4 "Times New Roman", Times, serif;
+    color: $color-black;
+    position: absolute;
+    right: 0;
+    top: 5em;
+
+text-transform: uppercase;
+    width: 11em;
+    padding: .8em;
+
+    &-1 {
+      background-color: hsla(56, 78%, 56%, 0.5);
+    }
+    &-2 {
+      background-color: hsla(128, 50%, 69%, 0.5);
+    }
+    &-3 {
+      background-color: hsla(208, 74%, 56%, 0.5);
+    }
+  }
+
+  &__picture {
+    height: 14em;
+    background-blend-mode: darken;
+    clip-path: polygon(0 0, 100% 0, 100% 79%, 0 95%);
+
+    &-1 {
+      background: url(../img/nat-5.jpg)
+        lighten($color: $color-secondary-light, $amount: 20%);
+      background-size: cover;
+    }
+
+    &-2 {
+      background: url(../img/nat-6.jpg)
+        lighten($color: $color-primary-light, $amount: 0%);
+      background-size: cover;
+    }
+
+    &-3 {
+      background: url(../img/nat-7.jpg)
+        lighten($color: $color-tersiary-light, $amount: 20%);
+      background-size: cover;
+    }
+  }
+
+  &__text {
+    margin-top: 3em;
+    padding: 1em;
+  }
+
+  &__btn--col {
+    &-1 {
+      background-color: darken($color: $color-secondary-light, $amount: 5%);
+      color: $color-black;
+    }
+    &-2 {
+      background-color: lighten($color: $color-primary-dark, $amount: 10%);
+      color: $color-black;
+    }
+    &-3 {
+      background-color: darken($color: $color-tersiary-dark, $amount: 0%);
+      color: $color-black;
+    }
+  }
+}

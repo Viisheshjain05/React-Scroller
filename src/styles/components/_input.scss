@@ -1,0 +1,67 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+// Default Input Element
+.input {
+  // Typography
+  background-color: lighten($color: $color-bg-base, $amount: 10);
+  font-size: $default-font-size;
+  color: $color-text;
+  width: 100%;
+
+  // Box-Model
+  border-radius: 0.3em;
+  border: $border-transparent;
+  padding: 0.5em;
+  margin: 0.1em;
+
+  &:active,
+  &:focus {
+    outline: none;
+    border-radius: 0.3em;
+    border: $input-lightblue-border;
+  }
+
+  &-white {
+    background-color: var(--color-white);
+    border: none;
+    cursor: pointer;
+
+    &:focus,
+    &:active {
+      border: none;
+      background-color: lighten($color: $color-bg-base, $amount: 10);
+      cursor: text;
+    }
+  }
+
+  &-big-white {
+    background-color: var(--color-white);
+    font-weight: 600;
+    border: none;
+    height: 7 em;
+
+    &:active,
+    &:focus {
+      outline: none;
+      border-radius: none;
+      border: none;
+    }
+  }
+
+  // &-disable {
+  //   background-color: none;
+  //   font-size: none;
+  //   color: currentColor;
+  //   width: none;
+  //   border-radius: none;
+  //   border: none;
+  //   padding: none;
+  //   margin: none;
+  // }
+}

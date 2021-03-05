@@ -1,0 +1,258 @@
+.main-container {
+  display: flex;
+  height: 100%;
+  background-color: var(--color-black);
+}
+
+.hotel-view {
+  flex: 10;
+  background-color: var(--color-grey-light-2);
+}
+
+.header {
+  height: 95vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 80vh, 0 100%);
+  position: relative;
+
+  background: scroll
+    linear-gradient(
+      to right top,
+      rgba(126, 213, 111, 0.8),
+      rgba(85, 115, 197, 0.8)
+    )
+    //   ,
+    // url(../img/hero.jpg) #777 top center
+;
+
+  &__logo-box {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  &__logo {
+    height: 40%;
+    width: 40%;
+  }
+  &__text-box {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// .header {
+// }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  &-logo {
+    padding: 1em;
+    align-self: center;
+
+    &__icon {
+      height: 4em;
+    }
+  }
+
+  &-search {
+    flex: 0 1 65em;
+    padding: 0 2em;
+    align-self: center;
+    text-align: center;
+    position: relative;
+
+    &__text {
+      border-radius: 30px;
+      background-color: var(--color-grey-light-4);
+      border: none;
+      font-size: large;
+      width: 90%;
+      min-width: 200px;
+      padding: 0.7em 1.2em;
+      transition: all 0.3s;
+
+      &::-webkit-input-placeholder {
+        color: var(--color-grey-dark-1);
+        text-transform: capitalize;
+      }
+
+      &:focus {
+        outline: none;
+        width: 100%;
+      }
+    }
+
+    &__img {
+      padding: 0.5em;
+      position: absolute;
+      transform: translateX(-5em);
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: center;
+
+    &__msg {
+      transform: translate(14px, 9px);
+      background-color: orangered;
+      border-radius: 50%;
+      color: #fff;
+      text-align: center;
+    }
+
+    &__img {
+      height: 2.5em;
+    }
+
+    &__icon {
+      flex: 1;
+      margin: 1.5em 2em;
+      cursor: pointer;
+    }
+    &__user {
+      padding: 0.4em;
+      display: flex;
+      cursor: pointer;
+
+      &--icon {
+        height: 5em;
+        width: 5em;
+        border: 1px solid black;
+        // background: center / cover url("../img/png/user-Vii.jpg") no-repeat;
+        border-radius: 100%;
+      }
+
+      &--name {
+        font-size: 1.2em;
+        padding: 0.4em;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: lighten($color: $color-grey-dark, $amount: 10%);
+  text-align: center;
+  padding: 6em 0;
+  font-size: 15px;
+
+  &__logo-box {
+    padding-bottom: 5em;
+    // width: 100%;
+  }
+  &__logo {
+    width: 13em;
+    height: auto;
+    padding: 1em;
+  }
+
+  &__list {
+    display: inline-block;
+    border-top: 1px solid $color-white-light;
+    width: auto;
+    padding-top: 1.2em;
+
+    &--item {
+      display: inline-block;
+      list-style: none;
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        transform: rotate(5deg) scale(1.1);
+      }
+    }
+
+    &--link {
+      text-decoration: none;
+      padding: 0.5em;
+      color: $color-white-light;
+      text-transform: uppercase;
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        color: $color-primary;
+        box-shadow: 2px 3px 20px $color-grey-dark;
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 10em;
+    color: darken($color: $color-white-light, $amount: 20%);
+    text-align: left;
+    padding-top: 1.2em;
+    width: 70%;
+    border-top: 1px solid $color-white-light;
+  }
+}
+
+.sidebar-container {
+  flex: 2;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__list {
+    padding: 0.5em 0;
+    margin: 0.2em 0;
+    width: 100%;
+    font-size: large;
+  }
+
+  &__copywrite {
+    font-size: 1.3em;
+  }
+}
+
+.sidebar-item-container {
+  position: relative;
+  display: flex;
+  margin: 0.5em 0;
+  padding: 1em 0;
+  padding-left: 0;
+  // border-left: 5px solid transparent;
+  // transition: border 0.4 cubic-bezier(0.075, 0.82, 0.165, 1) 0.2;
+
+  &__svg {
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    flex: 1;
+  }
+
+  &__link {
+    position: relative;
+    z-index: 10;
+    flex: 2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--color-red);
+    width: 4px;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: transform 0.3s,
+      width 0.4s cubic-bezier(0.35, 0.98, 0.58, 1) 0.3s;
+  }
+
+  &--active::before,
+  &:hover::before {
+    width: 100%;
+    transform: scaleY(1);
+  }
+}

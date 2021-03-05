@@ -1,0 +1,103 @@
+//Todo INDEX 
+// 1) btn
+// 2) btn--animate
+// 3) btn--white
+// 4) btn--text
+// 5) btn--green
+// 6) btn--big
+
+
+// Base Component
+.btn {
+  &,
+  &:link,
+  &:visited {
+    // alignment
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    
+    // box-model
+    margin: 2px;
+    border-radius: 15%;
+    border: none;
+    border-bottom: 2px solid transparent;
+    
+    // Typography
+    background-color: var(--color-grey-light-7);
+    // font-size: var(--default-font-size);
+
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      outline: none;
+      border-bottom: 2px solid var(--color-red);
+    }
+  }
+
+  &--animate {
+    animation: moveInTop 1s ease-out 0.75s;
+    animation-fill-mode: backwards;
+
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba($color-black, 0.3);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba($color-black, 0.3);
+    }
+  }
+
+  &--white {
+    background-color: $color-white-light;
+    color: $color-grey-l9;
+
+    &::after {
+      background-color: $color-white-light;
+    }
+    // color: $color-black;
+  }
+
+  &--text {
+    background-color: transparent;
+    color: $color-grey-l9;
+
+    &::after {
+      background-color: $color-white-light;
+    }
+    // color: $color-black;
+  }
+
+  &--green {
+    background-color: lighten($color: $color-primary, $amount: 20%);
+    color: $color-black;
+  }
+
+  &--big{
+    font-size: 3em;
+  }
+
+}

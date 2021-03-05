@@ -1,0 +1,82 @@
+// BLOCK--ELEMENT__MODIFIER
+
+// * abstract
+@import "./abstracts/variable";
+
+// * Base
+// @import "./base/fontUtil";
+@import "./base/indexBase";
+@import "./base/tagBase";
+@import "./base/typography";
+@import "./base/utilitiesMain";
+
+// * pages
+@import "./pages/home";
+
+// * components
+@import "./components/button";
+@import "./components/flex";
+@import "./components/input";
+@import "./components/modal";
+@import "./components/grid";
+// @import "./components/SVGs/svg";
+
+// * layouts
+@import "./layout/footer";
+@import "./layout/sideNavigation";
+@import "./layout/navigation";
+@import "./layout/header";
+
+// * Theme
+// Files Specific To certain Projects || Not Relevent in other projects
+@import "./theme/themeMain";
+
+// * Vendors
+@import "./vendor/vendorMain";
+
+//
+//
+//
+//
+//* BLOCK--ELEMENT__MODIFIER
+
+// POSSIBLE FILES
+// @import "abstracts/functions";
+// @import "abstracts/mixins";
+// @import "abstracts/variables";
+// @import "./abstract/extensions";
+
+// @import "base/animations";
+// @import "base/base";
+// @import "base/typography";
+// @import "base/utilities";
+
+// @import "components/bg-video";
+// @import "components/button";
+// @import "components/card";
+// @import "components/composition";
+// @import "components/feature-box";
+// @import "components/form";
+// @import "components/popup";
+// @import "components/story";
+// @import "./components/img";
+// @import "./components/imgGallery";
+// @import "./components/hotelOverview";
+// @import "./components/hotelDetails";
+
+// @import "layout/header";
+// @import "layout/footer";
+// @import "layout/navigation";
+// @import "./layout/sidebar";
+// @import "layout/flexbox";
+// @import "./layouts/container";
+// @import "./layouts/form";
+
+// @import "pages/home";
+// @import "./pages/work";
+// @import "./pages/about";
+// @import "./pages/project";
+
+// @import "theme/chrismass";
+
+// @import "./vendor/imgScroller";

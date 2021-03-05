@@ -1,0 +1,42 @@
+{
+  "_from": "sassypro",
+  "_id": "sassypro@1.2.7",
+  "_inBundle": false,
+  "_integrity": "sha512-l+NmcgsQyHr5CcYvx7ghnFCnlgEGOAB6by3e6aVk0KiglRoNdmV+mJqkHG7ZGFQMqIG36wp1LsUFtnuWCKfb0w==",
+  "_location": "/sassypro",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "sassypro",
+    "name": "sassypro",
+    "escapedName": "sassypro",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/sassypro/-/sassypro-1.2.7.tgz",
+  "_shasum": "4c23abdbeed6067e017aa587044adc221faaed72",
+  "_spec": "sassypro",
+  "_where": "C:\\Users\\VIISHESH\\Desktop\\_GitHub Repos\\React-Scroller\\src\\styles",
+  "author": "",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": " Maintain package and update as per version and create robost easy to use scss styles ",
+  "keywords": [
+    "sass",
+    "css",
+    "pre-build styles"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "sassypro",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.7"
+}

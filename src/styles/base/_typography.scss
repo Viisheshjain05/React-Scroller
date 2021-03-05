@@ -1,0 +1,65 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+// Responsive Headings, Paragraphs and form Sections
+
+.heading-primary {
+  font-weight: 400;
+  font-size: initial;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 3.5em;
+    letter-spacing: 10px;
+    animation: moveInRight 1s ease-out;
+  }
+
+  &--sub {
+    display: block;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    animation: moveInLeft 1s ease-out;
+  }
+}
+
+.heading-secondary {
+  display: block;
+  font-size: 2.5em;
+  background-image: linear-gradient(
+    to left bottom,
+    var(--color-red-dark),
+    var(--color-red-light)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 3px;
+  color: transparent;
+  transition: all 0.2s;
+  text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    text-shadow: 1px 7px 19px rgba(119, 119, 119, 0.6);
+    transform: scale(1.1) skew(2deg, 3deg);
+  }
+}
+
+.heading-tertiary {
+  color: var(--default-text-color);
+  margin-bottom: 1em;
+}
+
+.paragraph {
+  display: block;
+  border-bottom: 1px solid black;
+  padding: 0em 3em 1.5em 0em;
+  color: var(--default-text-color);
+  margin: 0 0 6em 3em;
+  width: 75%;
+}

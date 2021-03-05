@@ -1,0 +1,193 @@
+// Todo
+// Convert naming Like Bootstrap Colors ex - //var(--red-100)
+
+:root {
+  //! ----------------------------- SYSTEM ROOT DEFAULTS STARTED -----------------------------
+  //? ****************** COLORS  ********************
+
+  //? RED SHADES
+  --color-red: #eb2f64; /* Amaranth */
+
+  --color-red-light: #ff3366; /* Radical Red */
+  --color-red-light-1: #e7584a; /* Flamingo */
+
+  --color-red-dark: #ba265d; /* Old Rose  */
+  --color-red-dark-1: #e44332; /* cinnabar */
+
+  //? GREEN SHADES
+  --color-green: #55c57a; /* Emerald  */
+  --color-green-light: #7ed56f; /* Pastel Green */
+  --color-green-light-1: #7bce86; /* De York */
+
+  --color-green-dark: #28b485; /* Jungle Green */
+  --color-green-dark-1: #103a0c; /* Crusoe */
+
+  //? Yellow SHADES
+  --color-yellow-light: #ffb900; /* Selective Yellow */
+  --color-yellow-light-1: #ffffaa; /* selection canary */
+
+  --color-orange-dark: #ff7730; /*  Burnt Orange */
+
+  //? BLUE SHADES
+  --color-blue-light: #2998ff; /*  Dodger Blue */
+  --color-blue-light-1: #316fea; /*  Royal Blue */
+
+  --color-blue-dark: #5643fa; /* Neon Blue */
+
+  //? GREY SHADES
+  --color-grey: #777; /* Grey */
+
+  --color-grey-l1: #faf9f9; /* White Smoke */
+  --color-grey-l2: #f7f7f7; /* White Smoke */
+  --color-grey-l3: #f4f2f2; /* White Smoke */
+  --color-grey-l4: #fefdfd; /* Gery hint of red */
+  --color-grey-l5: #eee; /* White Smoke */
+  --color-grey-l6: #f0eeee; /* White Smoke */
+  --color-grey-l7: #ccc; /* White Smoke */
+  --color-grey-l8: #dddddd; /* White Smoke */
+  --color-grey-l9: #e6e6e6; /* Gainsboro */
+
+  --color-grey-d1: #999; /* Nobel */
+  --color-grey-d2: #878787; /*  Suva Grey */
+  --color-grey-d3: #6e6e6e; /*  Dim Grey */
+  --color-grey-d4: #5a5757; /* Mortar */
+  --color-grey-d5: #363946; /* Black Marlin */ //? DEFAULT TEXT COLOR
+  --color-grey-d6: #333; /* Night Rider */
+  --color-grey-d7: #1f1f1f; /* Nero */
+
+  //?  BLACK SHADES
+  --color-black: #0f0f0f; /* Black */
+
+  //?  WHITE SHADES
+  --color-white: #ffffff; /* White */
+
+  //?  WHITE TRANSPARENT SHADES
+  --white01: hsla(0, 0%, 100%, 0.01);
+  --white03: hsla(0, 0%, 100%, 0.03);
+  --white04: hsla(0, 0%, 100%, 0.04);
+  --white05: hsla(0, 0%, 100%, 0.05);
+  --white06: hsla(0, 0%, 100%, 0.06);
+  --white07: hsla(0, 0%, 100%, 0.07);
+  --white08: hsla(0, 0%, 100%, 0.08);
+  --white1: hsla(0, 0%, 100%, 0.1);
+  --white12: hsla(0, 0%, 100%, 0.12);
+  --white14: hsla(0, 0%, 100%, 0.14);
+  --white18: hsla(0, 0%, 100%, 0.18);
+  --white2: hsla(0, 0%, 100%, 0.2);
+  --white24: hsla(0, 0%, 100%, 0.24);
+  --white36: hsla(0, 0%, 100%, 0.36);
+  --white3: hsla(0, 0%, 100%, 0.3);
+  --white4: hsla(0, 0%, 100%, 0.4);
+  --white48: hsla(0, 0%, 100%, 0.48);
+  --white5: hsla(0, 0%, 100%, 0.5);
+  --white54: hsla(0, 0%, 100%, 0.54);
+  --white56: hsla(0, 0%, 100%, 0.56);
+  --white6: hsla(0, 0%, 100%, 0.6);
+  --white65: hsla(0, 0%, 100%, 0.65);
+  --white8: hsla(0, 0%, 100%, 0.8);
+  --white85: hsla(0, 0%, 100%, 0.85);
+  --white9: hsla(0, 0%, 100%, 0.9);
+  --white95: hsla(0, 0%, 100%, 0.95);
+
+  //? BLACK TRANSPARENT SHADES
+  --black02: rgba(0, 0, 0, 0.02);
+  --black07: rgba(0, 0, 0, 0.07);
+  --black12: rgba(0, 0, 0, 0.12);
+  --black16: rgba(0, 0, 0, 0.16);
+  --black18: rgba(0, 0, 0, 0.18);
+  --black24: rgba(0, 0, 0, 0.24);
+  --black35: rgba(0, 0, 0, 0.35);
+  --black36: rgba(0, 0, 0, 0.36);
+  --black5: rgba(0, 0, 0, 0.5);
+  --black54: rgba(0, 0, 0, 0.54);
+  --black56: rgba(0, 0, 0, 0.56);
+  --black85: rgba(0, 0, 0, 0.85);
+  --black04: rgba(0, 0, 0, 0.04);
+  --black05: rgba(0, 0, 0, 0.05);
+  --black06: rgba(0, 0, 0, 0.06);
+  --black08: rgba(0, 0, 0, 0.08);
+  --black1: rgba(0, 0, 0, 0.1);
+  --black14: rgba(0, 0, 0, 0.14);
+  --black15: rgba(0, 0, 0, 0.15);
+  --black2: rgba(0, 0, 0, 0.2);
+  --black3: rgba(0, 0, 0, 0.3);
+  --black4: rgba(0, 0, 0, 0.4);
+  --black25: rgba(0, 0, 0, 0.25);
+
+  //? ****************** TYPOGRAPHY ******************
+  --default-font-size: 1rem; // when font size 10px
+
+  --default-font-family-1: -apple-system, \.SFNSText-Regular, Helvetica Neue,
+    Hiragino Sans GB, WenQuanYi Micro Hei, Microsoft Yahei, sans-serif, Meiryo;
+
+  --default-font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+
+  --default-text-color: #363946;
+  --default-text-color: var(--color-grey-d6);
+
+  //? ****************** BOX MODEL ******************
+  --default-line-light: 1px solid rgba(77, 77, 77, 0.2);
+  --default-line-dark: 1px solid rgba(77, 77, 77, 0.7);
+
+  //? ****************** SHADOWS ******************
+  --default-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --default-shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  //! ----------------------------- SYSTEM ROOT DEFAULTS END -----------------------------
+  // ? OWN COLOR FOR ANY PROJECT COMMON GROUND TO VIEW CHANGES
+
+  --color-primary: var(--color-red-light);
+  --color-secondary: var(--color-grey-d7);
+  --color-tersiary: var(--color-grey-l2);
+}
+
+// 3 SELECTED COLORS
+//! CAN BE MODIFIED ACCORDING TO PROJECT
+
+$color-grey: #212529; /* Grey */
+
+$color-grey-l1: lighten(
+  $color: $color-grey,
+  $amount: 90,
+); /* White Smoke */
+
+$color-grey-l2: lighten(
+  $color: $color-grey,
+  $amount: 80,
+); /* White Smoke */
+
+$color-grey-l3: lighten(
+  $color: $color-grey,
+  $amount: 70,
+); /* White Smoke */
+
+$color-grey-l4: lighten(
+  $color: $color-grey,
+  $amount: 60,
+); /* Gery hint of red */
+
+$color-grey-l5: lighten(
+  $color: $color-grey,
+  $amount: 50,
+); /* White Smoke */
+
+$color-grey-l6: lighten(
+  $color: $color-grey,
+  $amount: 40,
+); /* White Smoke */
+
+$color-grey-l7: lighten(
+  $color: $color-grey,
+  $amount: 30,
+); /* White Smoke */
+
+$color-grey-l8: lighten(
+  $color: $color-grey,
+  $amount: 20,
+); /* Prfered BackDrop Color */
+
+$color-grey-l9: lighten(
+  $color: $color-grey,
+  $amount: 10,
+); /* Gainsboro */

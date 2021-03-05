@@ -1,0 +1,121 @@
+.form {
+  padding: 1em;
+  // text-align: center;
+
+  &__group:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  &__input {
+    background-color: rgba($color-white-light, 0.7);
+    display: block;
+    border: none;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    font: inherit;
+    font-size: larger;
+    padding: 0.5em;
+    transition: all 0.3s;
+
+    &:focus {
+      border-bottom: 3px solid orangered;
+      outline: none;
+      box-shadow: 0px 1px 3px 0px black;
+    }
+
+    &:valid {
+      border-bottom: 3px solid green;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $color-grey-dark;
+    }
+  }
+
+  &__label {
+    padding-top: 5px;
+    display: block;
+    opacity: 1;
+    font: 700 1.2em oblique;
+    transition: all 0.2s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-1.2rem);
+  }
+
+  &--group {
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 500;
+    text-align: left; 
+  }
+
+  &__radio-input {
+    display: inline-block ;
+  }
+
+  &__radio-label {
+    position: relative;
+  }
+
+  &__radio-button {
+    position: absolute;
+    top: 0em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: inline-block;
+    border: 5px solid $color-primary-dark;
+
+    &::after {
+      content: "";
+      height: 1em;
+      width: 1em;
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-primary-light;
+      outline-offset: 10px;
+    }
+  }
+
+  // .form__radio-button {
+  //   content: "";
+  //   display: block;
+  //   background-color: $color-primary;
+  //   border-radius: 50%;
+  //   width: 2em;
+  //   height: 2em;
+  // }
+}
+
+// &__radio:checked &__radio--group ~ &__radio--button::after {
+//   content: "";
+// }
+
+//   &__radio {
+//     display: inline;
+
+//     &--group {
+//       position: relative;
+//       font-size: 1.2em;
+//     font-weight: 500;
+
+//     &:first-child {
+//       display: inline-block;
+//       padding-left: 1em;
+//     }
+
+//     &:last-child {
+//       display: inline-block;
+//       padding-left: 8em;
+//     }
+//   }
+// }

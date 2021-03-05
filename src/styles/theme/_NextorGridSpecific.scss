@@ -1,0 +1,119 @@
+//Todo INDEX
+// 1)
+// 2)
+// 3)
+// 4)
+// 5)
+
+// ! HTML PUT IN HTML FILE TO VIEW CHANGES
+
+// <div class="grid-head bg-grey-100">
+// <div class="grid-header bg-grey-200">header</div>
+
+// <div class="grid-sidebar bg-grey-300">sidebar</div>
+
+// <section class="grid-box1 bg-grey-400">box1</section>
+// <section class="grid-box2 bg-grey-500">box2</section>
+// <section class="grid-box3 bg-grey-600">box3</section>
+
+// <main class="grid-content bg-grey-700">content</main>
+
+// <div class="grid-footer bg-grey-800">footer</div>
+// </div>
+
+
+//! TESTING CODE
+//? 2) Using GRID WITH AREA NAMES
+// .grid {
+//   &-head {
+//     display: grid;
+//     width: 1000px;
+//     grid-gap: 20px;
+//     grid-template-rows: 1fr 2fr 4fr 1fr;
+//     grid-template-columns: repeat(3, 1fr) 200px;
+//     margin: 1em auto;
+//     grid-template-areas:
+//       "head head head head"
+//       "box1 box2 box3 side"
+//       "main main main side"
+//       "foot foot foot side";
+
+//     & > * {
+//       padding: 1em;
+//       height: 100%;
+//       font-size: 1.5em;
+//     }
+//   }
+//   &-header {
+//     grid-area: head;
+//   }
+//   &-sidebar {
+//     grid-area: side;
+//   }
+//   &-box {
+//     &1 {
+//       grid-area: box1;
+//     }
+//     &2 {
+//       grid-area: box2;
+//     }
+//     &3 {
+//       grid-area: box3;
+//     }
+//   }
+//   &-content {
+//     grid-area: main;
+//     align-self: center;
+//   }
+//   &-footer {
+//     grid-area: foot;
+//   }
+// }
+
+//? 2) Using GRID WITH NUMBERS
+// .grid {
+//   &-head {
+//     display: grid;
+//     width: 1000px;
+//     grid-gap: 20px;
+//     grid-template-rows: repeat(8, 1fr);
+//     grid-template-columns: repeat(3, 1fr) 200px;
+//     margin: 1em auto;
+
+//     & > * {
+//       padding: 1em;
+//       height: 100%;
+//       font-size: 1.5em;
+//     }
+//   }
+//   &-header {
+//     grid-column: 1/4;
+//   }
+//   &-sidebar {
+//     grid-column: 4/5;
+//     grid-row: 1/-1;
+//   }
+//   &-box {
+//     &1 {
+//       grid-column: 1/2;
+//       grid-row: 2/4;
+//     }
+//     &2 {
+//       grid-column: 2/3;
+//       grid-row: 2/4;
+//     }
+//     &3 {
+//       grid-column: 3/4;
+//       grid-row: 2/4;
+//     }
+//   }
+//   &-content {
+//     grid-column: 1/4;
+//     grid-row: 4/8;
+//     align-self: center;
+//   }
+//   &-footer {
+//     grid-column: 1/4;
+//     grid-row: 8/-1;
+//   }
+// }

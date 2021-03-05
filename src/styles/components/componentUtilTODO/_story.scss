@@ -1,0 +1,64 @@
+.story {
+  margin: 4em 10em;
+  height: 15em;
+  background-color: rgba($color-white-light, 0.5);
+  transform: skewX(-10deg);
+  transition: all 0.7s;
+
+  &__shape {
+    position: relative;
+    width: 13em;
+    height: 13em;
+    clip-path: circle(50%);
+    shape-outside: circle(50%);
+    margin: 1em 0 1em 2em;
+    float: left;
+  }
+  &__image {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+    &-1 {
+      background-image: url(../img/nat-8.jpg);
+    }
+    &-2 {
+      background-image: url(../img/nat-9.jpg);
+    }
+
+    &--text {
+      position: absolute;
+      bottom: 2em;
+      left: 2.5em;
+      font-size: 1.5em;
+      width: fit-content;
+      transition: all 0.5s;
+      color: black;
+      font-weight: 500;
+      opacity: 0;
+    }
+  }
+
+  &__text {
+    width: 95%;
+    transform: translateX(1em) skewX(10deg);
+  }
+
+  &:hover {
+    transform: skewX(-10deg) scale(1.01);
+  }
+  &:hover &__image {
+    filter: blur(8px);
+  }
+
+  &:hover &__image--text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: $color-white-light ;
+    font-size: 1.5em;
+    opacity: 1;
+  }
+}

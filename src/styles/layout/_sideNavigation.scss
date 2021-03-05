@@ -1,0 +1,70 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+.sidebar-container {
+    flex: 2;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    &__list {
+      padding: 0.5em 0;
+      margin: 0.2em 0;
+      width: 100%;
+      font-size: large;
+    }
+   
+    &__copywrite {
+      font-size: 1.3em;
+    }
+  }
+  
+  .sidebar-item-container {
+    position: relative;
+    display: flex;
+    margin: 0.5em 0;
+    padding: 1em 0;
+    padding-left: 0;
+    // border-left: 5px solid transparent;
+    // transition: border 0.4 cubic-bezier(0.075, 0.82, 0.165, 1) 0.2;
+  
+    &__svg {
+      position: relative;
+      z-index: 10;
+      cursor: pointer;
+      flex: 1;
+    }
+  
+    &__link {
+      position: relative;
+      z-index: 10;
+      flex: 2;
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: var(--color-red);
+      width: 4px;
+      transform: scaleY(0);
+      transform-origin: center;
+      transition: transform 0.3s,
+        width 0.4s cubic-bezier(0.35, 0.98, 0.58, 1) 0.3s;
+    }
+  
+    &--active::before,
+    &:hover::before {
+      width: 100%;
+      transform: scaleY(1);
+    }
+  }
+  

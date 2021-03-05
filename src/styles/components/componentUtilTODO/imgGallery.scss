@@ -1,0 +1,18 @@
+.hotel-gallery {
+  display: flex;
+  height: 30vh;
+}
+
+.gallery-img {
+  width: 100%;
+  //   color: blue;
+  &--1 {
+    background: center / cover  no-repeat url("../img/png/hotel-1.jpg");
+  }
+  &--2 {
+    background: center / cover  no-repeat url("../img/png/hotel-2.jpg");
+  }
+  &--3 {
+    background: center / cover  no-repeat url("../img/png/hotel-3.jpg");
+  }
+}

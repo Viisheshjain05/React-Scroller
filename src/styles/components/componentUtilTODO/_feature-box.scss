@@ -1,0 +1,32 @@
+.feature-box {
+  color: $color-black;
+  background-color: rgba($color-white-light, 0.8);
+  border: 1px solid green;
+  margin: 1.5em;
+  width: 17vw;
+  padding: 1em 1em;
+  text-align: center;
+  transition: all 0.2s;
+  transform: translateX(-0em);
+  font-size: 1.2rem;
+
+  &__icon {
+    background: scroll
+        linear-gradient(to right top, rgb(11, 58, 185), rgb(70, 207, 46)),
+      url(../img/hero.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 3em;
+  }
+  &:hover {
+    transform: translateX(-1em) scale(1.2) skewY(1deg);
+
+    border-radius: 1px 6px 10px 6px;
+    box-shadow: 11px 9px 17px 0px #2d4c21;
+  }
+
+  &__text {
+    margin-top: 10px;
+  }
+}

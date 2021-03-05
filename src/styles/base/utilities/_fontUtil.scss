@@ -1,0 +1,51 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+$h1-font-size: 36px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+$h6-font-size: 16px;
+
+// text-color
+// .tx-c {
+//   color: var(--color-blue-light);
+// }
+
+.fw-bold {
+  font-weight: 700;
+}
+
+.fs-1 {
+  font-size: $h1-font-size;
+}
+
+.fs-2 {
+  font-size: $h2-font-size;
+}
+
+.fs-3 {
+  font-size: $h3-font-size;
+}
+
+.fs-4 {
+  font-size: $h4-font-size;
+}
+
+.fs-5 {
+  font-size: $h5-font-size;
+}
+
+.fs-6 {
+  font-size: $h6-font-size;
+}
+
+.text-muted{
+  color: var(--color-grey-d1);
+}

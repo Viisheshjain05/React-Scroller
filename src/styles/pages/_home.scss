@@ -1,0 +1,44 @@
+//Todo INDEX 
+// 1) 
+// 2) 
+// 3) 
+// 4) 
+// 5) 
+
+
+// UNIFORM SIDE GAP CONTAINER
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  // No Margin padding As it cause side effect when connected to other containers add explicitly
+  width: 100%;
+}
+
+.container-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shadow-light {
+  box-shadow: var(--default-shadow-light);
+}
+
+// ToDo
