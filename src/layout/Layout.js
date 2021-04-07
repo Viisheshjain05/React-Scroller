@@ -1,6 +1,6 @@
 import React from "react";
 // import ToggleProjects from "../utils/ToggleComponentProjects";
-import Auth from './Auth/CustomAuth/components/App.jsx'
+import Auth from './Auth/BasicCustomAuth/components/App.jsx'
 
 // !FOR TESTING PURPOSES
 // import MathFunction from '../tinyProjects/Todo mathFunctions/athFunctions.jsx'
@@ -20,8 +20,7 @@ const Layout = () => {
       {/* <ToggleProjects /> */}
       <Auth />
 
-      {/* //! FOR TESTING PURPOSES  */}
-      
+      {/* //! FOR TESTING PURPOSES  */}      
       {/* <MathFunction /> */}
       {/* <ToggleReactConcepts /> */}
       {/* <TechUse/> */}

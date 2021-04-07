@@ -1,5 +1,6 @@
 //? We Do not import app directly else we use normal exports as auth firestore to use thier features
 import firebase from "firebase/app";
+import  "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBAONvw5enR8yzt9knBZEZ0BX3lJEXFHLk",
@@ -17,7 +18,7 @@ const App = firebase.initializeApp(firebaseConfig);
 //! console.log("firebase.initializeApp", App);
 
 // * MAjor Auth Function is created For useing Auth Related Features
-export const auth = App.auth;
+export const  auth = App.auth();
 
 
 //?  We are just creating refrence to actual firebase features to use into appps 
